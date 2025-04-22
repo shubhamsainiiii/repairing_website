@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section className="mt-16 bg-gray-200 py-12 px-6 md:px-16 lg:px-24">
+        <section className="mt-16 py-12 px-6 md:px-16 lg:px-24">
             <div className="text-center">
                 <h1 className="text-4xl font-bold text-gray-900">Contact-us</h1>
                 <p className="mt-4 text-lg text-gray-600">
@@ -20,18 +20,18 @@ const Contact = () => {
                         height="450"
                         allowFullScreen=""
                         loading="lazy"
-                        className="rounded-xl shadow-md shadow-gray-600"
+                        className="rounded-xl shadow-sm shadow-gray-900"
                     ></iframe>
                 </div>
 
-                <div className="w-full lg:w-1/2 bg-gray-100 p-8 rounded-xl shadow-md shadow-gray-600">
+                <div className="w-full lg:w-1/2 bg-gray-100 p-8 rounded-xl shadow-sm shadow-gray-900">
                     <h2 className="text-2xl font-bold mb-6 text-center">Get in Touch With us</h2>
                     <form className="space-y-6">
                         <div className="flex flex-col md:flex-row gap-4">
                             <input
                                 type="text"
                                 placeholder="Your Name"
-                                className="w-full px-4 py-2 rounded-md shadow-sm shadow-gray-600 focus:outline-none"
+                                className="w-full px-4 py-2 rounded-md shadow-sm shadow-gray-900 focus:outline-none"
                             />
                             <input
                                 type="email"

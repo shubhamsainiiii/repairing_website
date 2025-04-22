@@ -20,16 +20,28 @@ const Footer = () => {
                 </div>
 
                 {/* Our Services */}
+                {/* Our Services */}
                 <div>
                     <h2 className="text-lg font-bold mb-4">Our Services</h2>
                     <ul className="space-y-2">
                         {[
-                            "AC (Air Conditioning)", "Geyser Repair Services", "Microwave Oven Repair Services",
-                            "Refrigerator Repair Services", "LED TV Repair Services", "Washing Machine Repair Services",
-                            "Water Cooler Repair Services", "Water Dispenser Repair Services",
-                            "CCTV Camera Repairing Services", "RO Water Purifier", "Chimney Repair Services"
+                            { name: "AC (Air Conditioning)", path: "/services/acrepair" },
+                            { name: "Geyser Repair Services", path: "/services/gyser" },
+                            { name: "Microwave Oven Repair Services", path: "/services/microwave" },
+                            { name: "Refrigerator Repair Services", path: "/services/refrigerator" },
+                            { name: "LED TV Repair Services", path: "/services/ledtv" },
+                            { name: "Washing Machine Repair Services", path: "/services/washingmachine" },
+                            { name: "Water Cooler Repair Services", path: "/services/watercooler" },
+                            { name: "Water Dispenser Repair Services", path: "/services/waterdispenser" },
+                            { name: "CCTV Camera Repairing Services", path: "/services/cctv" },
+                            { name: "RO Water Purifier", path: "/services/ropurifier" },
+                            { name: "Chimney Repair Services", path: "/services/chimney" },
+                            { name: "Air Dryer", path: "/services/dryer" },
+                            { name: "Air Compressor", path: "/services/compressor" }
                         ].map((service, index) => (
-                            <li key={index} className="hover:text-green-400 transition-all duration-400"><Link to="/services">{service}</Link></li>
+                            <li key={index} className="hover:text-green-400 transition-all duration-300">
+                                <Link to={service.path}>{service.name}</Link>
+                            </li>
                         ))}
                     </ul>
                 </div>
@@ -39,11 +51,14 @@ const Footer = () => {
                     <h2 className="text-lg font-bold mb-4">Useful Links</h2>
                     <ul className="space-y-2">
                         {[
-                            "About Us", "Our Services", "Blog", "FAQs",
-                            "Privacy Policy", "Terms & Conditions", "Site Map", "Contact Us"
+                            { name: "Home", path: "/" },
+                            { name: "About Us", path: "/about" },
+                            { name: "Our Services", path: "/services" },
+                            { name: "FAQs", path: "/faq" },
+                            { name: "Contact Us", path: "/contact" },
                         ].map((link, index) => (
-                            <li key={index} className="hover:text-green-400 trasition-all duration-400">
-                                <Link to={`/${link.replace(/\s+/g).toLowerCase()}`}>{link}</Link>
+                            <li key={index} className="hover:text-green-400 transition-all duration-300">
+                                <Link to={link.path}>{link.name}</Link>
                             </li>
                         ))}
                     </ul>

@@ -30,7 +30,7 @@ const About = () => {
             </div>
 
             {/* Image Slider Without Custom CSS */}
-            <div className="mb-10">
+            <div className="mb-10 shadow-sm rounded-lg shadow-gray-900 overflow-hidden">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     navigation
@@ -66,14 +66,14 @@ const About = () => {
                 <img
                     src={gyser}
                     alt="About Us"
-                    className="rounded-lg shadow-lg w-full h-64 object-cover"
+                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-64 object-cover"
                 />
             </div>
             <div className="grid md:grid-cols-2 mt-10 gap-8 items-center mt-20">
                 <img
                     src={gyser}
                     alt="About Us"
-                    className="rounded-lg shadow-lg w-full h-64 object-cover"
+                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-64 object-cover"
                 />
                 <div>
                     <h2 className="text-2xl font-bold text-gray-900">Home Repair & Services</h2>
@@ -85,7 +85,7 @@ const About = () => {
                 </div>
             </div>
             <motion.div
-                className="text-white py-12 mt-20 bg-indigo-900"
+                className="text-white py-12 mt-20 bg-blue-900 shadow-sm shadow-gray-900"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.1 }} // Animate jab 20% visible ho
@@ -101,7 +101,7 @@ const About = () => {
                                 hidden: { opacity: 0, y: 50 },
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeIn" } },
                             }}
-                            className="p-6 rounded-xl bg-indigo-900 transition-all duration-500 shadow-md shadow-black transform hover:scale-105 hover:shadow-gray-300 hover:shadow-sm"
+                            className="p-6 rounded-xl bg-blue-900 transition-all duration-500 shadow-sm shadow-black transform hover:scale-105 hover:shadow-gray-300 hover:shadow-sm"
                         >
                             <div className="flex flex-col items-center">
                                 {stat.icon}

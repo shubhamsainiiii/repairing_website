@@ -6,21 +6,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import gyser from '../assets/gyser.jpeg'
+import Ac from '../assets/Ac.jpeg'
 import rahul from '../assets/rahul.png'
 import priya from '../assets/priya.avif'
 import amit from '../assets/amit.png'
+import washing_machine from '../assets/washing_machine.jpeg';
+import refrigerator from '../assets/refrigerator.jpeg'
 
-
-
-// Dummy assets & icons (replace these with actual imports)
 const heroBg = "./assets/gyser.jpeg";
 const services = [
-  { title: "AC (Air Conditioning)", image: gyser, path: "/services/ac" },
-  { title: "Washing Machine", image: gyser, path: "/services/washing-machine" },
-  { title: "Refrigerator", image: gyser, path: "/services/fridge" },
-  { title: "Microwave Oven", image: gyser, path: "/services/microwave" },
-  { title: "Geyser", image: gyser, path: "/services/geyser" },
-  { title: "LED", image: gyser, path: "/services/led" },
+  { title: "AC (Air Conditioning)", image: Ac, path: "/services/acrepair" },
+  { title: "Washing Machine", image: washing_machine, path: "/services/washingmachine" },
+  { title: "Refrigerator", image: refrigerator, path: "/services/refrigerator" },
 ];
 
 const steps = [
@@ -64,7 +61,7 @@ const testimonials = [
 
 const Home = () => {
   return (
-    <div className="mt-16 py-12 px-6 md:px-16 lg:px-24 ">
+    <div className="mt-16 py-12 px-6 md:px-16 lg:px-24">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-gray-900">Wel-Come</h1>
         <p className="mt-4 text-lg text-gray-600">
@@ -72,7 +69,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="mb-10">
+      <div className="mb-10 shadow-sm rounded-lg shadow-gray-900 overflow-hidden">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation
@@ -106,14 +103,17 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.4, duration: 0.6 }}
               viewport={{ once: true }}
-              className="rounded-xl overflow-hidden shadow-lg bg-white"
+              className="rounded-xl overflow-hidden shadow-sm shadow-gray-900 bg-white"
             >
-              <img src={service.image} alt={service.title} className="w-full h-52 object-cover" />
+              <Link to={service.path}>
+                <img src={service.image} alt={service.title} className="w-full object-cover" />
+              </Link>
+
               <div className="p-4 text-center">
                 <h3 className="font-bold mb-2">{service.title}</h3>
                 <Link
                   to={service.path}
-                  className="text-orange-600 font-semibold hover:underline"
+                  className="text-orange-600 font-semibold"
                 >
                   Read More
                 </Link>
@@ -202,23 +202,15 @@ const Home = () => {
       <div className="mt-30 text-center">
         <h2 className="text-3xl font-bold mb-12 text-gray-800">What Our Customers Say</h2>
 
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={50}
-          slidesPerView={1}
-          loop
-          autoplay={{ delay: 3000 }}
-          className="max-w-3xl mx-auto px-4"
-        >
+        <Swiper modules={[Autoplay]} spaceBetween={50} slidesPerView={1} loop autoplay={{ delay: 3000 }} className="max-w-3xl mx-auto px-4 rounded-xl shadow-sm shadow-gray-900">
           {testimonials.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="bg-white rounded-xl shadow-xl p-8 transition-all duration-500 hover:shadow-2xl">
+              <div className="bg-white p-8">
                 <div className="flex flex-col items-center gap-4">
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-20 h-20 rounded-full border-4 border-orange-400 object-cover shadow-md"
-                  />
+                    className="w-20 h-20 rounded-full border-4 border-orange-400 object-cover shadow-md" />
                   <p className="italic text-gray-600 text-lg">"{item.message}"</p>
                   <h4 className="text-lg font-bold text-orange-600">{item.name}</h4>
                 </div>
