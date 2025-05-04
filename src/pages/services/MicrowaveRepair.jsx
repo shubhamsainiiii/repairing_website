@@ -5,26 +5,27 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Ac from '/Users/Rk Indora/Desktop/machinesystem/project/src/assets/Ac.jpeg';
 import { FaPhoneAlt } from 'react-icons/fa';
 
-const geyserRepairData = [
-    { service: "General Repair/Service", charge: "299" },
-    { service: "Installation (Up to 10 liters)", charge: "299" },
-    { service: "Installation (11 to 25 liters)", charge: "349" },
-    { service: "Un-installation", charge: "199" },
-    { service: "Un-installation + Installation (Up to 10 liters)", charge: "449" },
-    { service: "Un-installation + Installation (11 to 25 liters)", charge: "499" },
+const microwaveRepairData = [
+    { service: "Repair & Troubleshooting", charge: "349" },
+    { service: "General Check-up & Deep Cleaning", charge: "399" },
 ];
 
 const sparePartsData = [
-    { part: "Heating Element (Coil)", price: "650 – 1900", charge: "S.C." },
-    { part: "Thermostat (small) - Normal", price: "300", charge: "S.C." },
-    { part: "Thermostat (Large) - Normal", price: "430", charge: "S.C." },
-    { part: "Thermostat– Single Capillary", price: "750", charge: "S.C." },
-    { part: "Thermostat– Double Capillary", price: "900", charge: "S.C." },
-    { part: "Assembly Copper", price: "1900", charge: "S.C." },
-    { part: "Assembly stainless steel", price: "1650", charge: "S.C." },
-    { part: "Pipe (inlet)", price: "200–300", charge: "S.C." },
-    { part: "Pipe (Outlet)", price: "200–300", charge: "S.C." },
-    { part: "PRV (Pressure Release Valve)", price: "300", charge: "S.C." },
+    { part: "Bulb", price: "230", charge: "S.C." },
+    { part: "Transformer", price: "2300-2900", charge: "S.C." },
+    { part: "PCB Repair", price: "1900", charge: "S.C." },
+    { part: "Capacitor", price: "400", charge: "S.C." },
+    { part: "Magnetron", price: "1900", charge: "S.C." },
+    { part: "PCB New", price: "2630-3300", charge: "S.C." },
+    { part: "Temp Sensor", price: "300", charge: "S.C." },
+    { part: "Fuse Set", price: "200", charge: "S.C." },
+    { part: "Iron Paper", price: "170", charge: "S.C." },
+    { part: "Fan Motor", price: "900", charge: "S.C." },
+    { part: "Motor (Plate)", price: "800", charge: "S.C." },
+    { part: "Door Switch", price: "300", charge: "S.C." },
+    { part: "Touch Panel", price: "1650-270", charge: "S.C." },
+    { part: "Diode - Signle", price: "200", charge: "S.C." },
+    { part: "Diode - Double	", price: "230", charge: "S.C." },
 ];
 const MicrowaveRepair = () => {
     return (
@@ -90,7 +91,7 @@ const MicrowaveRepair = () => {
                             </li>
                             <li><b>Repair or Replacement : </b>Based on the diagnosis, we either repair the damaged components or recommend a replacement if needed.
                             </li>
-                            <li><b>Post-Repair Testing : </b> Once the work is done, we run a complete test to ensure your geyser is functioning safely and efficiently.
+                            <li><b>Post-Repair Testing : </b> Once the work is done, we run a complete test to ensure your <b>Microwave</b> is functioning safely and efficiently.
                             </li>
                             <li><b>Customer Satisfaction Check : </b> We consider the job complete only after you review and are fully satisfied with the service provided.
                             </li>
@@ -98,7 +99,7 @@ const MicrowaveRepair = () => {
 
                         {/* Service Table */}
                         <div className="mb-8 mt-8">
-                            <h3 className="text-2xl text-center font-bold mb-4 text-gray-900">Geyser Repair/Service Prices</h3>
+                            <h3 className="text-2xl text-center font-bold mb-4 text-gray-900">Microwave Oven Repair & Service Pricing</h3>
                             <table className="w-full border border-gray-300 text-sm">
                                 <thead className="bg-gray-200">
                                     <tr>
@@ -107,7 +108,7 @@ const MicrowaveRepair = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {geyserRepairData.map((item, i) => (
+                                    {microwaveRepairData.map((item, i) => (
                                         <tr key={i} className="text-center">
                                             <td className="border p-2">{item.service}</td>
                                             <td className="border p-2">{item.charge}</td>
@@ -119,13 +120,13 @@ const MicrowaveRepair = () => {
 
                         {/* Spare Parts Table */}
                         <div className="mb-8 mt-8">
-                            <h3 className="text-2xl text-center text-gray-900 font-bold mb-4">Geyser Spare/Parts Prices</h3>
+                            <h3 className="text-2xl text-center text-gray-900 font-bold mb-4">Microwave Spare/Parts Prices</h3>
                             <table className="w-full border border-gray-300 text-sm">
                                 <thead className="bg-gray-200">
                                     <tr>
-                                        <th className="border p-2">Repair & Service</th>
+                                        <th className="border p-2">Parts</th>
                                         <th className="border p-2">Spare Parts Price</th>
-                                        <th className="border p-2">Service Charge</th>
+                                        <th className="border p-2">Service Charges</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -138,6 +139,9 @@ const MicrowaveRepair = () => {
                                     ))}
                                 </tbody>
                             </table>
+                            <p className="text-sm text-gray-500 font-medium mt-4 text-center">
+                                Note : Final charges may vary based on model & condition. Technician will confirm after inspection.
+                            </p>
                         </div>
                     </div>
                 </div>

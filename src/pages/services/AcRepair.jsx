@@ -3,6 +3,7 @@ import Ac from '/Users/Rk Indora/Desktop/machinesystem/project/src/assets/Ac.jpe
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { FaPhoneAlt } from 'react-icons/fa';
 
 const Acrepair = () => {
     const spareParts = [
@@ -252,10 +253,20 @@ const Acrepair = () => {
                                         ))}
                                     </tbody>
                                 </table>
+                                <p className="text-sm text-gray-500 font-medium mt-4 text-center">
+                                    Note : Final charges may vary based on model & condition. Technician will confirm after inspection.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="flex justify-center my-10">
+                <a href="tel:+917691888950"
+                    className="flex bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
+                    <FaPhoneAlt className="mt-1 text-sm mr-4" />
+                    Book Now
+                </a>
             </div>
         </div>
     );

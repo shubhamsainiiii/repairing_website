@@ -15,7 +15,7 @@ const Header = () => {
 
     const services = [
         { name: "AC Repair", path: "/services/acrepair" },
-        { name: "Gyser Repair", path: "/services/gyser" },
+        { name: "Geyser Repair", path: "/services/gyser" },
         { name: "Microwave Repair", path: "/services/microwave" },
         { name: "Refrigerator Repair", path: "/services/refrigerator" },
         { name: "LED TV Repair", path: "/services/ledtv" },

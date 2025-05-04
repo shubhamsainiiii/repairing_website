@@ -143,6 +143,9 @@ const GeyserRepairPage = () => {
                                     ))}
                                 </tbody>
                             </table>
+                            <p className="text-sm text-gray-500 font-medium mt-4 text-center">
+                                Note : Final charges may vary based on model & condition. Technician will confirm after inspection.
+                            </p>
                         </div>
                     </div>
                 </div>
