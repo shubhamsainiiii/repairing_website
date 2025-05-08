@@ -263,7 +263,7 @@ const Acrepair = () => {
             </div>
             <div className="flex justify-center my-10">
                 <a href="tel:+917691888950"
-                    className="flex bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
+                    className="flex bg-blue-700 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
                     <FaPhoneAlt className="mt-1 text-sm mr-4" />
                     Book Now
                 </a>

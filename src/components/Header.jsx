@@ -66,7 +66,7 @@ const Header = () => {
                 </nav>
 
                 {/* Enquiry Button */}
-                <Link to="/contact" className="hidden md:block bg-orange-500 font-semibold px-4 py-2 rounded-lg hover:bg-orange-700 transition-all duration-300">
+                <Link to="/contact" className="hidden md:block bg-blue-700 font-semibold px-4 py-2 rounded-lg hover:bg-blue-900 transition-all duration-300">
                     Enquiry Now
                 </Link>
 
