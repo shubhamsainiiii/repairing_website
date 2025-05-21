@@ -59,7 +59,7 @@ const About = () => {
                 <div>
                     <h2 className="text-2xl font-bold text-gray-900">Who We Are</h2>
                     <p className="mt-4 text-gray-700 leading-relaxed font-medium text-justify">
-                        A to Z Machinist System is a platform offering home appliance repair services at your home. Whether you need Washing Machine repair, AC service, TV installation and many more, Our thousands of qualified service professionals based throughout the india. Customer use our platform to book doorstep repair services.
+                        <b>Universal Repair Point</b> is a platform offering home appliance repair services at your home. Whether you need Washing Machine repair, AC service, TV installation and many more, Our thousands of qualified service professionals based throughout the india. Customer use our platform to book doorstep repair services.
                         These services are delivered in the comfort of their home and at a time of their choosing. We promise to provide a reliable guaranteed super fast home service with quality and workmanship. To fulfill this promise, We work closely with service partners, enabling them with technology, training, products, tools and brand helping them succeed and deliver on this promise.We repair all major brands, makes and models. There is no matter where you bought it, we can fix it.
                     </p>
                 </div>
@@ -78,9 +78,9 @@ const About = () => {
                 <div>
                     <h2 className="text-2xl font-bold text-gray-900">Home Repair & Services</h2>
                     <p className="mt-4 text-gray-700 leading-relaxed font-medium text-justify">
-                        A to Z Machinist System provides professional and expert Home Appliance Repair & Services in Jaipur. We pride ourselves on our superior customer service and on going above and beyond to ensure our customers are 100 percent satisfied. Our experienced and skilled team uses the highest quality tools and materials to ensure your appliance performs at its optimum level. In addition, we strive to help you save money by repairing your appliance rather than replacing it.
+                        Universal Repair Point provides professional and expert Home Appliance Repair & Services in Jaipur. We pride ourselves on our superior customer service and on going above and beyond to ensure our customers are 100 percent satisfied. Our experienced and skilled team uses the highest quality tools and materials to ensure your appliance performs at its optimum level. In addition, we strive to help you save money by repairing your appliance rather than replacing it.
 
-                        Whether you’re in need of a simple or extensive appliance repair, you can trust the experts at A to Z Machinist System to fix the problem in a timely manner.
+                        Whether you’re in need of a simple or extensive appliance repair, you can trust the experts at Universal Repair Point to fix the problem in a timely manner.
                     </p>
                 </div>
             </div>

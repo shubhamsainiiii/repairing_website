@@ -10,7 +10,7 @@ const Layout = () => {
         window.scrollTo(0, 0);
     }, [location.pathname]);
     return (
-        <div className='bg-gray-200'>
+        <div className='bg-white font-primary'>
             <Header />
             <main className=''>
                 <Outlet />

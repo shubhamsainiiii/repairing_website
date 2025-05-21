@@ -80,7 +80,7 @@ const Contact = () => {
 
             <div className="px-6 md:px-16 mt-10 mb-10 text-center">
                 <h3 className="text-2xl font-bold mb-2">Our Location</h3>
-                <p className="font-semibold">A to Z Machinist System</p>
+                <p className="font-semibold">Universal Repair Point</p>
                 <p className="text-gray-700">
                     Address : Alankar Plaza, Sector 2, Central Spine, Vidyadhar Nagar, Jaipur, Rajasthan 302039
                 </p>

@@ -30,10 +30,10 @@ const Header = () => {
     ];
 
     return (
-        <header className="bg-black text-white w-full fixed top-0 z-50 shadow-md">
+        <header className="bg-black text-white w-full fixed top-0 z-50 shadow-md font-primary">
             <div className="container mx-auto flex justify-between items-center p-5">
                 <Link to="/" className="text-xl font-bold">
-                    <p>A to Z Machine</p>
+                    <p>Universal Repair Point</p>
                 </Link>
 
                 {/* Desktop Menu */}
