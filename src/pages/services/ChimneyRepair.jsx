@@ -37,7 +37,7 @@ const ChimneyRepair = () => {
                 <div className="flex justify-center">
                     <div className="w-full max-w-6xl">
                         <h2 className="text-xl font-bold mb-4 text-gray-900 text-center">
-                            "Breathe Easy, Cook Freely – Chimney Care That Keeps Your Kitchen Fresh & Safe."</h2>
+                            "Breathe Easy, Cook Freely  Chimney Care That Keeps Your Kitchen Fresh & Safe."</h2>
 
                         <p className="mb-4 text-justify text-gray-900 text-lg">
                             We specialize in chimney installation, deep cleaning, and repair services to ensure your kitchen stays fresh, smoke-free, and safe. Whether your chimney is clogged with grease, making noise, not absorbing smoke efficiently, or simply due for routine maintenance, our skilled technicians diagnose and resolve every issue with care and precision.
@@ -53,7 +53,7 @@ const ChimneyRepair = () => {
 
                             <li><b>Trained & Trusted Technicians : </b>Our skilled chimney service experts are experienced with all major brands and models. Whether it’s poor suction, loud noise, blocked filters, or malfunctioning motors. we inspect, clean, and fix every issue with accuracy and attention to detail.</li>
 
-                            <li><b>Quick & Hassle-Free Visits : </b>We know how important a smoke-free, clean kitchen is. That’s why we provide fast and same-day chimney repair and cleaning services across Jaipur — so you don’t have to wait days to breathe easy again.</li>
+                            <li><b>Quick & Hassle-Free Visits : </b>We know how important a smoke-free, clean kitchen is. That’s why we provide fast and same-day chimney repair and cleaning services across Jaipur  so you don’t have to wait days to breathe easy again.</li>
 
                             <li><b>Clear Pricing, No Surprises : </b>We stand by the quality of our service. Every job is backed by a warranty on parts and labour, so your chimney works like new and stays that way.</li>
 

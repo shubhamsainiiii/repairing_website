@@ -64,7 +64,7 @@ const Home = () => {
     <div className="mt-16 py-12 px-6 md:px-16 lg:px-24">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-gray-900">Wel-Come</h1>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="mt-4 text-lg text-gray-900">
           Your Trusted Partner for Home Appliance Repairs & Services.
         </p>
       </div>
@@ -93,8 +93,8 @@ const Home = () => {
         </Swiper>
       </div>
 
-      <div className="py-16 px-6 max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">Our Best Services</h2>
+      <div className="py-16 px-6 max-w-8xl mx-auto">
+        <h2 className="text-4xl md:text-3xl font-bold text-center mb-10">Our Best Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <motion.div
@@ -110,10 +110,10 @@ const Home = () => {
               </Link>
 
               <div className="p-4 text-center">
-                <h3 className="font-bold mb-2">{service.title}</h3>
+                <h3 className="font-bold mb-2 text-xl">{service.title}</h3>
                 <Link
                   to={service.path}
-                  className="text-orange-600 font-semibold"
+                  className="text-blue-900 font-bold text-md"
                 >
                   Read More
                 </Link>
@@ -124,7 +124,7 @@ const Home = () => {
         <div className="text-center mt-10">
           <Link
             to="/services"
-            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300"
+            className="bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300"
           >
             Explore All Services
           </Link>
@@ -135,7 +135,7 @@ const Home = () => {
       <div
         className="bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-white text-center px-4"
         style={{
-          backgroundImage: `url(${heroBg})`,
+          backgroundImage: `url(${gyser})`,
           backgroundBlendMode: "overlay",
           backgroundColor: "rgba(0,0,0,0.7)",
         }}
@@ -146,13 +146,13 @@ const Home = () => {
         <div className="mt-6 flex gap-4 flex-wrap justify-center">
           <Link
             to="/about"
-            className="bg-orange-500 hover:bg-orange-700 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300"
+            className="bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300"
           >
             About More
           </Link>
           <a
             href="tel:7691888950"
-            className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300"
+            className="bg-gray-100 hover:bg-gray-300 text-gray-900 px-6 py-3 rounded-md font-semibold transition-all duration-300"
           >
             <FaPhoneAlt className="inline mr-2" /> Call Now
           </a>
@@ -174,7 +174,7 @@ const Home = () => {
                 ease: "easeInOut",
               }}
               viewport={{ once: false }}
-              className={`relative overflow-hidden rounded-xl shadow-md shadow-gray-600 bg-gradient-to-br ${step.color} text-white p-6 hover:scale-105 transition-transform duration-600`}
+              className={`relative overflow-hidden rounded-xl shadow-sm shadow-gray-900 bg-gradient-to-br ${step.color} text-white p-6 hover:scale-105 transition-transform duration-600`}
             >
               {/* Animated Dots */}
               <span className="absolute top-2 left-2 size-35 bg-white rounded-full opacity-20 animate-[ping_3s_ease-in-out_infinite]"></span>
@@ -182,13 +182,13 @@ const Home = () => {
               <span className="absolute bottom-2 right-2 size-30 bg-black rounded-full opacity-30 animate-[ping_3s_ease-in-out_infinite] "></span>
 
               {/* Icon and Text */}
-              <div className="text-5xl mb-4 flex justify-center items-center z-10 relative">
+              <div className="text-5xl mb-4 flex justify-center text-gray-900 items-center z-10 relative">
                 {step.icon}
               </div>
-              <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#50727B] to-[#180161]">
+              <h3 className="text-2xl font-bold mb-2 text-gray-900">
                 {step.title}
               </h3>
-              <p className="text-md font-medium text-transparent bg-clip-text bg-gradient-to-r to-[#030637] from-[#092635]">
+              <p className="text-md font-medium text-gray-900">
                 {step.description}
               </p>
 
@@ -210,9 +210,9 @@ const Home = () => {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-20 h-20 rounded-full border-4 border-orange-400 object-cover shadow-md" />
-                  <p className="italic text-gray-600 text-lg">"{item.message}"</p>
-                  <h4 className="text-lg font-bold text-orange-600">{item.name}</h4>
+                    className="w-20 h-20 rounded-full border-4 border-gray-900 object-cover shadow-md" />
+                  <p className="italic text-gray-800 text-lg">"{item.message}"</p>
+                  <h4 className="text-lg font-bold text-gray-900">{item.name}</h4>
                 </div>
               </div>
             </SwiperSlide>

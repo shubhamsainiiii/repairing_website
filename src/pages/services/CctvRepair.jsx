@@ -49,7 +49,7 @@ const CctvRepair = () => {
 
                         <ul className="list-disc pl-5 space-y-3 text-gray-900 text-lg mt-4 text-justify">
 
-                            <li><b>Expert Technicians : </b>Our certified CCTV specialists are trained to work with all major surveillance brands from Hikvision, CP Plus, Dahua to Godrej and beyond. Be it camera malfunctions, DVR/NVR issues, wiring problems, or connectivity faults — we resolve it all with technical expertise and attention to detail.</li>
+                            <li><b>Expert Technicians : </b>Our certified CCTV specialists are trained to work with all major surveillance brands from Hikvision, CP Plus, Dahua to Godrej and beyond. Be it camera malfunctions, DVR/NVR issues, wiring problems, or connectivity faults  we resolve it all with technical expertise and attention to detail.</li>
 
                             <li><b>Quick Turnaround : </b>We know how critical uninterrupted security is for your home or business. That’s why we offer same-day CCTV installation and repair across Jaipur to ensure your property stays protected without delay.</li>
 
@@ -98,7 +98,7 @@ const CctvRepair = () => {
                         </ul>
 
                         <h3 className="text-xl text-gray-900 font-bold mt-6 mb-2">Final Thoughts</h3>
-                        <p className='pl-5 text-lg mt-4 text-justify text-gray-900'>Keeping your CCTV system in top condition ensures uninterrupted surveillance and peace of mind. Regular maintenance, prompt issue identification, and basic troubleshooting can resolve most minor faults. However, for complex issues, don’t hesitate to consult a qualified CCTV technician to avoid further damage or data loss.</p>
+                        <p className='pl-5 text-lg mt-4 text-justify text-gray-900'>Keeping your CCTV system in top condition ensures uninterrupted surveillance, enhanced security, and lasting peace of mind. Just like any other electronic system, CCTV cameras and DVR/NVR units require regular upkeep to perform optimally. Routine inspections, lens cleaning, cable checks, and timely firmware updates can prevent small problems from escalating into serious faults. Prompt identification and resolution of issues like blurry footage, signal loss, or storage failure help maintain reliable monitoring and deter potential security threats. While basic troubleshooting such as restarting the system or adjusting camera angles can be done in-house, more advanced problems like hardware malfunctions, power supply issues, or network configuration errors are best handled by trained professionals</p>
                     </div>
                 </div>
             </div>

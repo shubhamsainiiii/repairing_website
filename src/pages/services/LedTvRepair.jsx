@@ -64,17 +64,17 @@ const LedTvRepair = () => {
                             “Expert LED TV Maintenance and Repair Because Your Screen Deserves the Best”
                         </h2>
                         <p className="mb-4 text-justify text-gray-900 text-lg">
-                            Whether your LED TV has no picture, distorted visuals, sound issues, or refuses to turn on — our certified technicians provide accurate diagnosis and dependable solutions tailored to your TV brand, type, and viewing needs. We service all major TV models including LED, LCD, Smart TVs, and Android TVs from top brands like Samsung, LG, Sony, MI, and more. Using genuine spare parts, advanced tools, and tested repair techniques, we restore your TV’s visual and sound performance with precision and care — so your entertainment never skips a beat.<br />
+                            Whether your LED TV has no picture, distorted visuals, sound issues, or refuses to turn on  our certified technicians provide accurate diagnosis and dependable solutions tailored to your TV brand, type, and viewing needs. We service all major TV models including LED, LCD, Smart TVs, and Android TVs from top brands like Samsung, LG, Sony, MI, and more. Using genuine spare parts, advanced tools, and tested repair techniques, we restore your TV’s visual and sound performance with precision and care  so your entertainment never skips a beat.<br />
                             Our goal is to minimize screen downtime and maximize performance through expert service and preventive care. With quick response times, transparent pricing, and a customer-first approach.
                         </p>
                         <h3 className="text-xl font-bold mt-6 mb-2 text-gray-900">Why Choose Us for LED TV Services in Jaipur?</h3>
 
-                        <p className="text-gray-900 text-lg text-justify">From precise LED TV installation to thorough diagnostics and urgent repairs, we offer complete television servicing solutions for homes, offices, hotels, and retail spaces. Whether it’s an LED, LCD, Smart TV, or Android TV, we restore clear visuals, crisp sound, and smooth functionality without delay. No more screen flickering, no audio, or unresponsive remotes. Our certified technicians use advanced tools, genuine spare parts, and proven repair techniques to bring your TV back to life. Because in today’s digital world, uninterrupted entertainment and information aren’t just wants — they’re essentials. Let us handle your screen problems, so you can sit back and enjoy the show without worry.
+                        <p className="text-gray-900 text-lg text-justify">From precise LED TV installation to thorough diagnostics and urgent repairs, we offer complete television servicing solutions for homes, offices, hotels, and retail spaces. Whether it’s an LED, LCD, Smart TV, or Android TV, we restore clear visuals, crisp sound, and smooth functionality without delay. No more screen flickering, no audio, or unresponsive remotes. Our certified technicians use advanced tools, genuine spare parts, and proven repair techniques to bring your TV back to life. Because in today’s digital world, uninterrupted entertainment and information aren’t just wants  they’re essentials. Let us handle your screen problems, so you can sit back and enjoy the show without worry.
                         </p>
 
                         <ul className="list-disc pl-5 space-y-3 text-gray-900 text-lg mt-4 text-justify">
 
-                            <li><b>Expert Technicians : </b>Our certified LED TV repair specialists in Jaipur are trained to handle all major brands and models — from Samsung, LG, Sony to MI, Panasonic, and more. Whether it’s a display issue, sound problem, or motherboard fault — we fix it all with expert precision.</li>
+                            <li><b>Expert Technicians : </b>Our certified LED TV repair specialists in Jaipur are trained to handle all major brands and models  from Samsung, LG, Sony to MI, Panasonic, and more. Whether it’s a display issue, sound problem, or motherboard fault  we fix it all with expert precision.</li>
 
                             <li><b>Quick Turnaround : </b>We understand how important your entertainment setup is. That’s why we provide same-day LED TV repair services across Jaipur, minimizing your screen downtime and restoring your viewing experience quickly.</li>
 
@@ -82,12 +82,12 @@ const LedTvRepair = () => {
 
                             <li><b>Customer Satisfaction Guaranteed : </b>Every repair is backed by our warranty on parts and labor, giving you peace of mind and lasting performance. Your satisfaction is our top priority.</li>
 
-                            <li><b>Comprehensive Repair Solutions : </b>From screen replacements, HDMI port fixes, to power supply and software issues — we offer complete LED TV repair services for all brands and types (LED, LCD, Smart TVs, Android TVs, etc.)</li>
+                            <li><b>Comprehensive Repair Solutions : </b>From screen replacements, HDMI port fixes, to power supply and software issues  we offer complete LED TV repair services for all brands and types (LED, LCD, Smart TVs, Android TVs, etc.)</li>
                         </ul>
 
                         <h3 className="text-xl font-bold mt-6 mb-2 flex flex-raw text-gray-900">Common LED TV Issues We Expertly Handle</h3>
 
-                        <p className='text-gray-900 text-lg text-justify'>LED TVs are essential for entertainment and information in homes, offices, and commercial spaces. But over time, even the most reliable TVs can develop issues that affect viewing quality and performance. From screen flickering, sound distortion, and HDMI port issues to motherboard failures, backlight problems, or software glitches — these faults, if left unchecked, can lead to poor display, interrupted viewing, or complete device failure. Regular maintenance, timely repairs, and expert diagnostics are key to ensuring your LED TV continues to deliver a sharp picture, clear audio, and reliable performance throughout its life.
+                        <p className='text-gray-900 text-lg text-justify'>LED TVs are essential for entertainment and information in homes, offices, and commercial spaces. But over time, even the most reliable TVs can develop issues that affect viewing quality and performance. From screen flickering, sound distortion, and HDMI port issues to motherboard failures, backlight problems, or software glitches  these faults, if left unchecked, can lead to poor display, interrupted viewing, or complete device failure. Regular maintenance, timely repairs, and expert diagnostics are key to ensuring your LED TV continues to deliver a sharp picture, clear audio, and reliable performance throughout its life.
                         </p>
 
 
@@ -101,7 +101,7 @@ const LedTvRepair = () => {
 
                             <li><b>Connectivity & Port Issues : </b>Facing problems with HDMI, USB, or AV ports? We repair or replace faulty input ports so you can enjoy uninterrupted streaming, gaming, or viewing on all your connected devices.</li>
 
-                            <li><b>Power or Startup Failure : </b>Is your TV not turning on or stuck on the boot screen? Whether it’s a power supply board, adapter, or internal circuit problem — we fix it safely and efficiently.</li>
+                            <li><b>Power or Startup Failure : </b>Is your TV not turning on or stuck on the boot screen? Whether it’s a power supply board, adapter, or internal circuit problem  we fix it safely and efficiently.</li>
 
                             <li><b>Screen Flickering, Lines, or Color Issues : </b>Distorted images, horizontal lines, or flickering screens? These are often signs of panel or T-Con board failure. We diagnose and fix such display issues to restore crisp, vibrant visuals.</li>
                         </ul>

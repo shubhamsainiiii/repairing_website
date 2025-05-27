@@ -24,7 +24,7 @@ const About = () => {
             {/* Header Section */}
             <div className="text-center mb-10">
                 <h1 className="text-4xl font-bold text-gray-900">About Us</h1>
-                <p className="mt-4 text-lg text-gray-600">
+                <p className="mt-4 text-lg text-gray-900">
                     Your Trusted Partner for Home Appliance Repairs & Services.
                 </p>
             </div>
@@ -57,8 +57,8 @@ const About = () => {
             {/* Company Overview */}
             <div className="grid md:grid-cols-2 gap-8 items-center mt-20">
                 <div>
-                    <h2 className="text-2xl font-bold text-gray-900">Who We Are</h2>
-                    <p className="mt-4 text-gray-700 leading-relaxed font-medium text-justify">
+                    <h2 className="text-3xl font-bold text-gray-900">Who We Are</h2>
+                    <p className="mt-4 text-gray-700 leading-relaxed text-lg font-medium text-justify">
                         <b>Universal Repair Point</b> is a platform offering home appliance repair services at your home. Whether you need Washing Machine repair, AC service, TV installation and many more, Our thousands of qualified service professionals based throughout the india. Customer use our platform to book doorstep repair services.
                         These services are delivered in the comfort of their home and at a time of their choosing. We promise to provide a reliable guaranteed super fast home service with quality and workmanship. To fulfill this promise, We work closely with service partners, enabling them with technology, training, products, tools and brand helping them succeed and deliver on this promise.We repair all major brands, makes and models. There is no matter where you bought it, we can fix it.
                     </p>
@@ -66,19 +66,19 @@ const About = () => {
                 <img
                     src={gyser}
                     alt="About Us"
-                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-64 object-cover"
+                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-76 mt-4 object-cover"
                 />
             </div>
             <div className="grid md:grid-cols-2 mt-10 gap-8 items-center mt-20">
                 <img
                     src={gyser}
                     alt="About Us"
-                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-64 object-cover"
+                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-84 object-cover"
                 />
                 <div>
-                    <h2 className="text-2xl font-bold text-gray-900">Home Repair & Services</h2>
-                    <p className="mt-4 text-gray-700 leading-relaxed font-medium text-justify">
-                        Universal Repair Point provides professional and expert Home Appliance Repair & Services in Jaipur. We pride ourselves on our superior customer service and on going above and beyond to ensure our customers are 100 percent satisfied. Our experienced and skilled team uses the highest quality tools and materials to ensure your appliance performs at its optimum level. In addition, we strive to help you save money by repairing your appliance rather than replacing it.
+                <h2 className="text-3xl font-bold text-gray-900">Home Repair & Services</h2>
+                    <p className="mt-4 text-gray-700 text-lg leading-relaxed font-medium text-justify">
+                       <b>Universal Repair Point</b> provides professional and expert Home Appliance Repair & Services in Jaipur. We pride ourselves on our superior customer service and on going above and beyond to ensure our customers are 100 percent satisfied. Our experienced and skilled team uses the highest quality tools and materials to ensure your appliance performs at its optimum level. In addition, we strive to help you save money by repairing your appliance rather than replacing it.
 
                         Whether you’re in need of a simple or extensive appliance repair, you can trust the experts at Universal Repair Point to fix the problem in a timely manner.
                     </p>
@@ -145,7 +145,7 @@ const About = () => {
                 <div className="mt-10 flex gap-4">
                     <a
                         href="tel:7691888950"
-                        className="bg-teal-600 hover:bg-teal-700 tarnsition-all duration-500 flex items-center text-white px-6 py-3 rounded-md font-semibold gap-2"
+                        className="bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300 flex gap-2 items-center"
                     >
                         <FaPhoneAlt />
                         Call Now
@@ -153,7 +153,7 @@ const About = () => {
 
                     <a
                         href="mailto:shubhamthoi27@gmail.com"
-                        className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300"
+                        className="bg-gray-100 hover:bg-gray-300 text-gray-900 px-6 py-3 rounded-md font-semibold transition-all duration-300"
                     >
                         Contact Us
                     </a>

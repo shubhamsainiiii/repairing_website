@@ -99,8 +99,8 @@ const OurServices = () => {
     return (
         <div className="mt-16 py-12 px-6 md:px-16 lg:px-24">
             <div className="text-center mb-10">
-                <h1 className="text-4xl font-bold text-gray-900">Our Services</h1>
-                <p className="mt-4 text-lg text-gray-600">Home & Kitchen Appliance Repair</p>
+                <h1 className="text-5xl font-bold text-gray-900">Our Services</h1>
+                <p className="mt-4 text-lg text-gray-900">Home & Kitchen Appliance Repair</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -109,18 +109,18 @@ const OurServices = () => {
                         key={index}
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.2, duration: 0.5 }}
-                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.2, duration: 0.3 }}
+                        viewport={{ once: false }}
                         className="rounded-xl overflow-hidden shadow-sm shadow-gray-900 bg-white">
                         <Link to={service.path}>
                             <img src={service.img} alt={service.name} className="w-full object-cover" />
                         </Link>
                         <div className="p-4 text-center">
                             <h3 className="font-bold mb-2 text-xl text-gray-900">{service.name}</h3>
-                            <p className="text-gray-600 text-md font-medium mb-2">{service.desc}</p>
+                            <p className="text-gray-900 text-md font-medium mb-2">{service.desc}</p>
                             <Link
                                 to={service.path}
-                                className="text-orange-600 font-bold text-lg"
+                                className="text-blue-900 font-bold text-md"
                             >
                                 Read More
                             </Link>

@@ -48,14 +48,14 @@ const Faq = () => {
 
     return (
         <section className="text-gray-800 mt-16 py-12 px-6">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
-                (FAQs) for an Appliance Repairing Service
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-10">
+                FAQs for an Appliance Repairing Service
             </h2>
             <div className="max-w-2xl mx-auto space-y-8">
                 {faqs.map((faq, index) => (
                     <div
                         key={index}
-                        className="bg-gray-300 shadow-md shadow-gray-500 rounded-xl overflow-hidden transition-transform duration-400 hover:scale-[1.03] font-medium"
+                        className="bg-gray-800 shadow-md shadow-gray-500 rounded-xl overflow-hidden transition-transform duration-400 hover:scale-[1.03] font-medium"
                     >
                         <button
                             onClick={() => toggleFAQ(index)}
@@ -63,13 +63,13 @@ const Faq = () => {
                         >
                             <span>Q {index + 1} : {faq.question}</span>
                             {openIndex === index ? (
-                                <ChevronUp className="w-5 h-5 text-gray-600" />
+                                <ChevronUp className="w-5 h-5 text-gray-900" />
                             ) : (
-                                <ChevronDown className="w-5 h-5 text-gray-600" />
+                                <ChevronDown className="w-5 h-5 text-gray-900" />
                             )}
                         </button>
                         <div
-                            className={`px-6 text-gray-700 text-justify overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[500px] py-4' : 'max-h-0'
+                            className={`px-6 text-gray-100 text-justify overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[500px] py-4' : 'max-h-0'
                                 }`}
                         >
                             {faq.answer}

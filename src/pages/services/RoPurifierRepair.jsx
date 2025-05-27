@@ -49,7 +49,7 @@ const RoPurifierRepair = () => {
 
                         <ul className="list-disc pl-5 space-y-3 text-gray-900 text-lg mt-4 text-justify">
 
-                            <li><b>Skilled Technicians : </b>Our certified RO service experts are trained to work with all leading purifier brands like Kent, Aquaguard, Livpure, Pureit, and more. Whether it's poor filtration, low water pressure, foul taste, or filter/membrane replacement — we diagnose and fix every issue with precision and care.</li>
+                            <li><b>Skilled Technicians : </b>Our certified RO service experts are trained to work with all leading purifier brands like Kent, Aquaguard, Livpure, Pureit, and more. Whether it's poor filtration, low water pressure, foul taste, or filter/membrane replacement  we diagnose and fix every issue with precision and care.</li>
 
                             <li><b>Fast & Hassle-Free Service : </b>We understand how essential clean drinking water is. That’s why we offer same-day RO installation and repair throughout Jaipur to keep your family or workplace safe and hydrated without delay.</li>
 
@@ -91,7 +91,7 @@ const RoPurifierRepair = () => {
                         </ul>
 
                         <h3 className="text-xl text-gray-900 font-bold mt-6 mb-2">Final Thoughts</h3>
-                        <p className='pl-5 text-lg mt-4 text-justify text-gray-900'>Keeping your RO water purifier in peak condition ensures safe, clean drinking water and long-term system reliability. Regular servicing, timely filter replacements, and early detection of performance issues can prevent major breakdowns. While basic upkeep like cleaning and checking for leaks can be done at home, it's best to call a certified RO technician for electrical faults, pump failures, or internal malfunctions—so you avoid further damage and ensure your purifier runs smoothly for years to come.</p>
+                        <p className='pl-5 text-lg mt-4 text-justify text-gray-900'>Keeping your RO water purifier in peak condition ensures safe, clean drinking water and long-term system reliability. Regular servicing, timely filter replacements, and early detection of performance issues can prevent major breakdowns. While basic upkeep like cleaning and checking for leaks can be done at home, it's best to call a certified RO technician for electrical faults, pump failures, or internal malfunctionsso you avoid further damage and ensure your purifier runs smoothly for years to come.</p>
                     </div>
                 </div>
             </div>

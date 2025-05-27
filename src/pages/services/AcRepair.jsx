@@ -71,11 +71,11 @@ const Acrepair = () => {
 
                         <ul className="list-disc pl-5 space-y-3 text-gray-900 text-lg mt-4 text-justify">
 
-                            <li><b>Skilled & Certified Technicians : </b>Our experienced AC specialists are trained to handle all major brands and models using the right tools and updated techniques — ensuring precise diagnosis and reliable service.</li>
+                            <li><b>Skilled & Certified Technicians : </b>Our experienced AC specialists are trained to handle all major brands and models using the right tools and updated techniques  ensuring precise diagnosis and reliable service.</li>
 
                             <li><b>Quick Response & Same-Day Service : </b>We understand how uncomfortable a malfunctioning AC can be. That’s why we offer prompt support and same-day repair or maintenance for most issues, so you’re not left waiting.</li>
 
-                            <li><b>Honest, Transparent Pricing : </b>No surprises here. You’ll get upfront estimates with clear breakdowns — no hidden charges, no last-minute add-ons.</li>
+                            <li><b>Honest, Transparent Pricing : </b>No surprises here. You’ll get upfront estimates with clear breakdowns  no hidden charges, no last-minute add-ons.</li>
 
                             <li><b>Genuine Spare Parts & Warranty Support : </b>We use only brand-approved parts for repairs and replacements. All our work is backed by service warranties, giving you peace of mind and long-term reliability.</li>
                         </ul>
@@ -83,7 +83,7 @@ const Acrepair = () => {
                         <h3 className="text-xl font-bold mt-6 mb-2 flex flex-raw text-gray-900">Common Air Conditioning Issues We Expertly Handle</h3>
 
                         <p className='text-gray-900 text-lg text-justify'>
-                            Air conditioners are essential for maintaining comfort in homes and businesses, especially during peak summers. But over time, even the best systems can develop issues that affect cooling performance and energy efficiency. From weak airflow and unusual noises to refrigerant leaks, thermostat malfunctions, clogged filters, or compressor failure — these problems, if ignored, can lead to uneven cooling, rising energy bills, and complete system breakdowns. Regular maintenance, timely repairs, and professional inspections are crucial to keeping your AC running smoothly, safely, and efficiently all year round.
+                            Air conditioners are essential for maintaining comfort in homes and businesses, especially during peak summers. But over time, even the best systems can develop issues that affect cooling performance and energy efficiency. From weak airflow and unusual noises to refrigerant leaks, thermostat malfunctions, clogged filters, or compressor failure  these problems, if ignored, can lead to uneven cooling, rising energy bills, and complete system breakdowns. Regular maintenance, timely repairs, and professional inspections are crucial to keeping your AC running smoothly, safely, and efficiently all year round.
                         </p>
 
                         <ul className="list-disc pl-5 space-y-3 text-lg mt-4 text-justify text-gray-900">

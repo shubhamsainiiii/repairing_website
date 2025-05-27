@@ -49,7 +49,7 @@ const WaterDispenserRepair = () => {
 
                         <ul className="list-disc pl-5 space-y-3 text-gray-900 text-lg mt-4 text-justify">
 
-                            <li><b>Expert Technicians : </b>Our trained and certified water dispenser repair specialists in Jaipur handle all major brands — from Voltas, Blue Star, Usha, Havells to Kent and more. Whether it’s heating/cooling issues, water leakage, sensor problems, or motor failure. we fix it all with expert precision.</li>
+                            <li><b>Expert Technicians : </b>Our trained and certified water dispenser repair specialists in Jaipur handle all major brands  from Voltas, Blue Star, Usha, Havells to Kent and more. Whether it’s heating/cooling issues, water leakage, sensor problems, or motor failure. we fix it all with expert precision.</li>
 
                             <li><b>Quick Turnaround : </b>We understand how important clean and temperature-controlled water is. That’s why we offer same-day water dispenser repair across Jaipur to ensure your daily routine isn’t interrupted.</li>
 
@@ -61,7 +61,7 @@ const WaterDispenserRepair = () => {
                         </ul>
 
                         <h3 className="text-xl font-bold mt-6 mb-2 flex flex-raw text-gray-900">Common Water Dispenser Issues We Expertly Handle</h3>
-                        <p className='text-gray-900 text-lg text-justify'>Water dispensers are essential appliances for providing quick and convenient access to clean drinking water in homes, offices, schools, and commercial environments. However, with regular use, even the most dependable dispensers can develop issues that affect their performance and safety. From water leakage, slow or no dispensing, and unusual noises to cooling or heating failures, electrical faults, or hygiene concerns — these problems, if ignored, can compromise both water quality and user experience. Regular maintenance, timely part replacements, and professional diagnostics are crucial to keeping your water dispenser running efficiently, safely, and reliably. Our expert technicians are equipped to handle all common dispenser issues and ensure your appliance continues to deliver fresh, temperature-controlled water without disruption.
+                        <p className='text-gray-900 text-lg text-justify'>Water dispensers are essential appliances for providing quick and convenient access to clean drinking water in homes, offices, schools, and commercial environments. However, with regular use, even the most dependable dispensers can develop issues that affect their performance and safety. From water leakage, slow or no dispensing, and unusual noises to cooling or heating failures, electrical faults, or hygiene concerns  these problems, if ignored, can compromise both water quality and user experience. Regular maintenance, timely part replacements, and professional diagnostics are crucial to keeping your water dispenser running efficiently, safely, and reliably. Our expert technicians are equipped to handle all common dispenser issues and ensure your appliance continues to deliver fresh, temperature-controlled water without disruption.
                         </p>
 
                         <ul className="list-disc pl-5 space-y-3 text-lg mt-4 text-justify text-gray-900">
@@ -91,7 +91,7 @@ const WaterDispenserRepair = () => {
                             <li><b>Customer Satisfaction Check : </b> We consider the job complete only after you review and are fully satisfied with the service provided.</li>
                         </ul>
                         <h3 className="text-xl text-gray-900 font-bold mt-6 mb-2">Final Thoughts</h3>
-                        <p className='pl-5 text-lg mt-4 text-justify text-gray-900'>A well-maintained washing machine is essential for smooth, hassle-free laundry care in homes, apartments, and commercial laundry setups. Regular servicing, timely replacement of worn-out parts, and checking for drain or motor issues can greatly extend the life of your appliance while ensuring efficient washing performance. While basic maintenance like cleaning the drum or lint filter can be done at home, complex issues such as water leakage, spin cycle failure, electrical faults, or motor breakdowns require professional attention. Trust certified technicians to accurately diagnose and repair your washing machine, ensuring it runs smoothly, safely, and reliably for years to come.
+                        <p className='pl-5 text-lg mt-4 text-justify text-gray-900'>A well-maintained water dispenser is essential for providing clean, temperature-controlled drinking water in homes, offices, and commercial spaces. Regular servicing, timely filter replacements, and inspection of cooling/heating components can significantly extend the appliance's life and maintain hygienic water flow. While basic upkeep like cleaning the tap or exterior can be done at home, more complex issuessuch as inconsistent water temperature, internal leakage, or malfunctioning compressorsrequire expert attention. Trust certified technicians to accurately diagnose and repair your water dispenser, ensuring it operates efficiently, safely, and reliably every day.
                         </p>
                     </div>
                 </div>

@@ -37,7 +37,7 @@ const AirDryer = () => {
                 <div className="flex justify-center">
                     <div className="w-full max-w-6xl">
                         <h2 className="text-xl font-bold mb-4 text-gray-900 text-center">
-                            Breathe Easy, Stay Cool – Air Dryer Care That Keeps Your Home Comfortable and Safe
+                            Breathe Easy, Stay Cool  Air Dryer Care That Keeps Your Home Comfortable and Safe
                         </h2>
 
                         <p className="mb-4 text-justify text-gray-900 text-lg">
@@ -65,7 +65,7 @@ const AirDryer = () => {
                         <h3 className="text-xl font-bold mt-6 mb-2 flex flex-raw text-gray-900">Common Air Dryer Issues We Expertly Handle</h3>
 
                         <p className='text-gray-900 text-lg text-justify'>
-                            Air dryers play an essential role in maintaining comfort by ensuring moisture-free indoor spaces. However, like any appliance, air dryers can experience issues that impact their performance and your indoor air quality. From weak airflow and overheating to unusual noises, malfunctioning motors, or faulty heating elements—these issues, if ignored, can lead to decreased efficiency and discomfort.
+                            Air dryers play an essential role in maintaining comfort by ensuring moisture-free indoor spaces. However, like any appliance, air dryers can experience issues that impact their performance and your indoor air quality. From weak airflow and overheating to unusual noises, malfunctioning motors, or faulty heating elementsthese issues, if ignored, can lead to decreased efficiency and discomfort.
                         </p>
 
                         <ul className="list-disc pl-5 space-y-3 text-lg mt-4 text-justify text-gray-900">
@@ -75,7 +75,7 @@ const AirDryer = () => {
 
                             <li><b>Weak or Interrupted Airflow :  </b>Low or fluctuating airflow often means blocked vents, clogged filters, or motor issues. We inspect and restore smooth ventilation to keep performance steady and efficient.</li>
 
-                            <li><b>Dryer Not Turning On or Shutting Off Unexpectedly : </b>From faulty power cords to internal circuit issues or overload cutoffs—we diagnose startup failures and restore reliable function without delay.</li>
+                            <li><b>Dryer Not Turning On or Shutting Off Unexpectedly : </b>From faulty power cords to internal circuit issues or overload cutoffswe diagnose startup failures and restore reliable function without delay.</li>
 
                             <li><b>Dust, Lint, or Debris Build-Up : </b>Internal lint build-up reduces efficiency and increases fire risk. We perform deep internal cleaning and duct clearing for safe, smooth airflow.</li>
 

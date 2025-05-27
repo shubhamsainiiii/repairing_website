@@ -42,7 +42,7 @@ const Header = () => {
                         <Link
                             key={index}
                             to={link.path}
-                            className="hover:text-red-500 font-semibold transition-all duration-300"
+                            className="text-gray-100 hover:text-gray-300 font-semibold transition-all duration-300"
                         >
                             {link.name}
                         </Link>
@@ -50,7 +50,7 @@ const Header = () => {
 
                     {/* Desktop Dropdown */}
                     <div className="relative group">
-                        <Link to="/services" className="hover:text-red-500 transition-all font-semibold duration-300 cursor-pointer">
+                        <Link to="/services" className="hover:text-gray-300 transition-all font-semibold duration-300 cursor-pointer">
                             Our Services
                         </Link>
                         <div className="absolute left-0 mt-2 bg-white text-black shadow-lg w-56 rounded-md opacity-0 scale-95 transition-all duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100 group-hover:scale-100">

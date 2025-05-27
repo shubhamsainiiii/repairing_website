@@ -5,7 +5,7 @@ const Contact = () => {
         <section className="mt-16 py-12 px-6 md:px-16 lg:px-24">
             <div className="text-center">
                 <h1 className="text-4xl font-bold text-gray-900">Contact-us</h1>
-                <p className="mt-4 text-lg text-gray-600">
+                <p className="mt-4 text-lg text-gray-900">
                     Your Trusted Partner for Home Appliance Repairs & Services.
                 </p>
             </div>
@@ -25,7 +25,7 @@ const Contact = () => {
                 </div>
 
                 <div className="w-full lg:w-1/2 bg-gray-100 p-8 rounded-xl shadow-sm shadow-gray-900">
-                    <h2 className="text-2xl font-bold mb-6 text-center">Get in Touch With us</h2>
+                    <h2 className="text-2xl text-gray-900 font-bold mb-6 text-center">Get in Touch With us</h2>
                     <form className="space-y-6">
                         <div className="flex flex-col md:flex-row gap-4">
                             <input
@@ -58,6 +58,8 @@ const Contact = () => {
                                 <option>CCTV Camera Repair</option>
                                 <option>RO Water Purifier</option>
                                 <option>Chimney Repair</option>
+                                <option>Air Dryer</option>
+                                <option>Air Compressor</option>
                             </select>
                         </div>
                         <textarea
@@ -68,7 +70,7 @@ const Contact = () => {
                         <div className="flex justify-center">
                             <button
                                 type="submit"
-                                className="bg-orange-500 hover:bg-orange-700 text-white font-semibold px-6 py-2 rounded-md shadow-sm shadow-black transition-all duration-500 cursor-pointer hover:scale-[1.06]"
+                                className="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-6 py-2 rounded-md shadow-sm shadow-black transition-all duration-500 cursor-pointer"
                             >
                                 SUBMIT NOW
                             </button>
@@ -81,14 +83,14 @@ const Contact = () => {
             <div className="px-6 md:px-16 mt-10 mb-10 text-center">
                 <h3 className="text-2xl font-bold mb-2">Our Location</h3>
                 <p className="font-semibold">Universal Repair Point</p>
-                <p className="text-gray-700">
+                <p className="text-gray-900">
                     Address : Alankar Plaza, Sector 2, Central Spine, Vidyadhar Nagar, Jaipur, Rajasthan 302039
                 </p>
                 <p className="font-medium">
                     Phone No :
                     <a
                         href="tel:+917691888950"
-                        className="text-red-600 font-semibold hover:underline"
+                        className="text-gray-900 font-semibold"
                     >  +91-7691888950
                     </a>
                 </p>
