@@ -29,7 +29,7 @@ const About = () => {
                 </p>
             </div>
 
-            {/* Image Slider Without Custom CSS */}
+
             <div className="mb-10 shadow-sm rounded-lg shadow-gray-900 overflow-hidden">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
@@ -76,9 +76,9 @@ const About = () => {
                     className="rounded-lg shadow-sm shadow-gray-900 w-full h-84 object-cover"
                 />
                 <div>
-                <h2 className="text-3xl font-bold text-gray-900">Home Repair & Services</h2>
+                    <h2 className="text-3xl font-bold text-gray-900">Home Repair & Services</h2>
                     <p className="mt-4 text-gray-700 text-lg leading-relaxed font-medium text-justify">
-                       <b>Universal Repair Point</b> provides professional and expert Home Appliance Repair & Services in Jaipur. We pride ourselves on our superior customer service and on going above and beyond to ensure our customers are 100 percent satisfied. Our experienced and skilled team uses the highest quality tools and materials to ensure your appliance performs at its optimum level. In addition, we strive to help you save money by repairing your appliance rather than replacing it.
+                        <b>Universal Repair Point</b> provides professional and expert Home Appliance Repair & Services in Jaipur. We pride ourselves on our superior customer service and on going above and beyond to ensure our customers are 100 percent satisfied. Our experienced and skilled team uses the highest quality tools and materials to ensure your appliance performs at its optimum level. In addition, we strive to help you save money by repairing your appliance rather than replacing it.
 
                         Whether you’re in need of a simple or extensive appliance repair, you can trust the experts at Universal Repair Point to fix the problem in a timely manner.
                     </p>
