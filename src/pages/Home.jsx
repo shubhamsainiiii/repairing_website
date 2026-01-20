@@ -8,7 +8,7 @@ import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 // import gyser from '../assets/gyser.jpeg'
 import Ac from '../assets/Ac.jpeg'
-import Oven from '../assets/Oven.jpeg'
+import Oven from '../assets/oven.jpeg'
 import rahul from '../assets/rahul.png'
 import priya from '../assets/priya.avif'
 import amit from '../assets/amit.png'
