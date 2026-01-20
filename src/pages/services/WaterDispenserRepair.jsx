@@ -2,9 +2,10 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Ac from '/Users/Rk Indora/Desktop/machinesystem/project/src/assets/Ac.jpeg';
 import { FaPhoneAlt } from 'react-icons/fa';
-
+import slider1 from '../../assets/slider1.jpg';
+import slider2 from '../../assets/slider2.png';
+import slider3 from '../../assets/slider3.png';
 const WaterDispenserRepair = () => {
     return (
         <div className="mt-16 py-12 px-6 md:px-16 lg:px-24">
@@ -20,15 +21,14 @@ const WaterDispenserRepair = () => {
                         loop={true}
                     >
                         {[
-                            Ac,
-                            Ac,
-                            Ac
+                            slider3, slider1, slider2
                         ].map((img, index) => (
                             <SwiperSlide key={index}>
                                 <img
                                     src={img}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-full h-96 object-cover"
+                                    className="w-full h-116 object-cover"
+                                    loading="lazy"
                                 />
                             </SwiperSlide>
                         ))}
@@ -96,12 +96,17 @@ const WaterDispenserRepair = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center my-6">
+            <div className="flex flex-col items-center">
                 <a href="tel:+917691888950"
                     className="flex bg-blue-700 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
                     <FaPhoneAlt className="mt-1 text-sm mr-4" />
                     Book Now
                 </a>
+                <p className="text-md text-gray-500 font-normal mt-4 text-center max-w-md">
+                    Note: Final charges may vary based on the device model and condition. The
+                    technician will confirm the exact cost after inspection. Visiting charges
+                    will also be applicable.
+                </p>
             </div>
         </div>
     )

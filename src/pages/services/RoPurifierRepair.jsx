@@ -2,9 +2,10 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Ac from '/Users/Rk Indora/Desktop/machinesystem/project/src/assets/Ac.jpeg';
 import { FaPhoneAlt } from 'react-icons/fa';
-
+import slider1 from '../../assets/slider1.jpg';
+import slider2 from '../../assets/slider2.png';
+import slider3 from '../../assets/slider3.png';
 const RoPurifierRepair = () => {
     return (
         <div className="mt-16 py-12 px-6 md:px-16 lg:px-24">
@@ -20,15 +21,14 @@ const RoPurifierRepair = () => {
                         loop={true}
                     >
                         {[
-                            Ac,
-                            Ac,
-                            Ac
+                            slider1, slider3, slider2
                         ].map((img, index) => (
                             <SwiperSlide key={index}>
                                 <img
                                     src={img}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-full h-96 object-cover"
+                                    className="w-full h-116 object-cover"
+                                    loading="lazy"
                                 />
                             </SwiperSlide>
                         ))}
@@ -44,7 +44,7 @@ const RoPurifierRepair = () => {
                             Trust us to take care of your water, so you can take care of what matters most.</p>
 
                         <h3 className="text-xl font-bold mt-6 mb-2 text-gray-900">Why Choose Us for RO Purifier Services in Jaipur?</h3>
-                        <p className="text-gray-900 text-lg text-justify">Looking for Reliable RO Water Purifier Services in Jaipur? You're in the Right Place.<br /> We specialize in RO purifier installation, repair, and regular maintenance for homes and businesses across Jaipur. Whether you're facing issues like low water flow, unusual taste, filter replacement needs, or complete system breakdown. our experienced technicians handle it all with care and precision. We use genuine parts and trusted techniques to ensure your purifier delivers safe, clean, and great-tasting water every day. With prompt service, transparent pricing, and a focus on long-term performance, we make sure your water is always pure and your system runs flawlessly.<br />
+                        <p className="text-gray-900 text-lg text-justify">Looking for Reliable RO Water Purifier Services in Jaipur? You're in the Right Place.<br /> We specialize in RO purifier installation, repair, and regular maintenance for homes and businesses across Jaipur. Whether you're facing issues like low water flow, unusual taste, filter replacement needs, or complete system breakdown. our experienced technicians handle it all with care and precision. We use genuine parts and trusted techniques to ensure your purifier delivers safe, clean, and great-tasting water every day. With prompt service, transparent pricing, and a focus on long-term performance, we make sure your water is always pure and your system runs flawlessly.
                             Because clean drinking water isn’t a luxury it’s a necessity. Let us help keep your water safe.</p>
 
                         <ul className="list-disc pl-5 space-y-3 text-gray-900 text-lg mt-4 text-justify">
@@ -74,10 +74,7 @@ const RoPurifierRepair = () => {
                             <li><b>Power or Indicator Issues : </b>Not turning on, lights not blinking, or strange beeping? We troubleshoot all electrical components wiring, adapter, SMPS, switches to ensure safe and uninterrupted operation.</li>
 
                             <li><b>Unusual Sounds or Vibrations : </b>Buzzing or vibrating RO units may indicate faulty pumps or internal blockages. Our team quickly finds and fixes the root cause to restore smooth, quiet functioning.</li>
-
                         </ul>
-
-
                         <h3 className="text-xl font-bold mt-6 mb-2 text-gray-900">Our Repair Process</h3>
                         <ul className="list-disc pl-5 space-y-3 text-lg mt-4 text-justify text-gray-900">
 
@@ -95,12 +92,17 @@ const RoPurifierRepair = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center my-10">
+            <div className="flex flex-col items-center my-6">
                 <a href="tel:+917691888950"
                     className="flex bg-blue-700 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
                     <FaPhoneAlt className="mt-1 text-sm mr-4" />
                     Book Now
                 </a>
+                <p className="text-md text-gray-500 font-normal mt-4 text-center max-w-md">
+                    Note: Final charges may vary based on the device model and condition. The
+                    technician will confirm the exact cost after inspection. Visiting charges
+                    will also be applicable.
+                </p>
             </div>
         </div>
     )

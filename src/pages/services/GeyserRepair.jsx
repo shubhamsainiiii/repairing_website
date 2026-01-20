@@ -2,31 +2,10 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Ac from '/Users/Rk Indora/Desktop/machinesystem/project/src/assets/Ac.jpeg';
-import { FaPhoneAlt, FaTools } from 'react-icons/fa';
-
-const geyserRepairData = [
-    { service: "General Repair/Service", charge: "299" },
-    { service: "Installation (Up to 10 liters)", charge: "299" },
-    { service: "Installation (11 to 25 liters)", charge: "349" },
-    { service: "Un-installation", charge: "199" },
-    { service: "Un-installation + Installation (Up to 10 liters)", charge: "449" },
-    { service: "Un-installation + Installation (11 to 25 liters)", charge: "499" },
-];
-
-const sparePartsData = [
-    { part: "Heating Element (Coil)", price: "650 – 1900", charge: "S.C." },
-    { part: "Thermostat (small) - Normal", price: "300", charge: "S.C." },
-    { part: "Thermostat (Large) - Normal", price: "430", charge: "S.C." },
-    { part: "Thermostat– Single Capillary", price: "750", charge: "S.C." },
-    { part: "Thermostat– Double Capillary", price: "900", charge: "S.C." },
-    { part: "Assembly Copper", price: "1900", charge: "S.C." },
-    { part: "Assembly stainless steel", price: "1650", charge: "S.C." },
-    { part: "Pipe (inlet)", price: "200–300", charge: "S.C." },
-    { part: "Pipe (Outlet)", price: "200–300", charge: "S.C." },
-    { part: "PRV (Pressure Release Valve)", price: "300", charge: "S.C." },
-];
-
+import { FaPhoneAlt } from 'react-icons/fa';
+import slider1 from '../../assets/slider1.jpg';
+import slider2 from '../../assets/slider2.png';
+import slider3 from '../../assets/slider3.png';
 const GeyserRepairPage = () => {
     return (
         <div className="mt-16 py-12 px-6 md:px-16 lg:px-24">
@@ -38,19 +17,18 @@ const GeyserRepairPage = () => {
                         modules={[Navigation, Pagination, Autoplay]}
                         navigation
                         pagination={{ clickable: true }}
-                        autoplay={{ delay: 2000 }}
+                        autoplay={{ delay: 10000 }}
                         loop={true}
                     >
                         {[
-                            Ac,
-                            Ac,
-                            Ac
+                            slider1, slider2, slider3
                         ].map((img, index) => (
                             <SwiperSlide key={index}>
                                 <img
                                     src={img}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-full h-96 object-cover"
+                                    className="w-full h-116 object-cover"
+                                    loading="lazy"
                                 />
                             </SwiperSlide>
                         ))}
@@ -118,54 +96,7 @@ const GeyserRepairPage = () => {
 
                             <li><b>Customer Satisfaction Check : </b> We consider the job complete only after you review and are fully satisfied with the service provided.</li>
                         </ul>
-
-                        {/* Service Table */}
-                        <div className="mt-10 space-y-8">
-                            <div className="w-full px-4">
-                                <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Geyser Repair/Service Prices</h3>
-                                <table className="w-full border font-medium text-gray-900 border-black text-center text-lg">
-                                    <thead className="bg-gray-200">
-                                        <tr>
-                                            <th className="border p-2">Repair & Service</th>
-                                            <th className="border p-2">Service Charge</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {geyserRepairData.map((item, i) => (
-                                            <tr key={i} className="text-center">
-                                                <td className="border p-2">{item.service}</td>
-                                                <td className="border p-2">{item.charge}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        {/* Spare Parts Table */}
                         <div className="mb-8 mt-8">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Geyser Spare/Parts Prices</h3>
-                            <table className="w-full border font-medium text-gray-900 border-black text-center text-lg">
-                                <thead className="bg-gray-200">
-                                    <tr>
-                                        <th className="border p-2">Repair & Service</th>
-                                        <th className="border p-2">Spare Parts Price</th>
-                                        <th className="border p-2">Service Charge</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {sparePartsData.map((item, i) => (
-                                        <tr key={i} className="text-center">
-                                            <td className="border p-2">{item.part}</td>
-                                            <td className="border p-2">{item.price}</td>
-                                            <td className="border p-2">{item.charge}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                            <p className="text-md text-gray-500 font-normal mt-4 text-center">
-                                Note : Final charges may vary based on model & condition. Technician will confirm after inspection.
-                            </p>
                             <h3 className="text-xl text-gray-900 font-bold mt-6 mb-2">Final Thoughts</h3>
                             <p className='pl-5 text-lg mt-4 text-justify text-gray-900'>A well-maintained geyser is essential for reliable hot water supply and energy efficiency, whether in homes, offices, or commercial facilities. Regular servicing, timely part replacements, and safety checks can significantly extend its lifespan while preventing unexpected breakdowns. While simple maintenance like cleaning the outer body or checking power connections can be handled in-house, more complex issues such as thermostat failure, heating element damage, or water leakage demand professional attention. Trust certified technicians to accurately diagnose and resolve problems, ensuring your geyser operates safely, efficiently, and consistently all year round.
                             </p>
@@ -173,12 +104,19 @@ const GeyserRepairPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center my-10">
-                <a href="tel:+917691888950"
-                    className="flex bg-blue-700 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
+            <div className="flex flex-col items-center">
+                <a
+                    href="tel:+917691888950"
+                    className="flex bg-blue-700 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300"
+                >
                     <FaPhoneAlt className="mt-1 text-sm mr-4" />
                     Book Now
                 </a>
+                <p className="text-md text-gray-500 font-normal mt-4 text-center max-w-md">
+                    Note: Final charges may vary based on the device model and condition. The
+                    technician will confirm the exact cost after inspection. Visiting charges
+                    will also be applicable.
+                </p>
             </div>
         </div>
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -5,15 +6,20 @@ import { FaBook, FaPhoneAlt, FaSearch, FaTools } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import gyser from '../assets/gyser.jpeg'
+// import gyser from '../assets/gyser.jpeg'
 import Ac from '../assets/Ac.jpeg'
+import Oven from '../assets/Oven.jpeg'
 import rahul from '../assets/rahul.png'
 import priya from '../assets/priya.avif'
 import amit from '../assets/amit.png'
 import washing_machine from '../assets/washing_machine.jpeg';
 import refrigerator from '../assets/refrigerator.jpeg'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import slider1 from '../assets/slider1.jpg';
+import slider2 from '../assets/slider1.jpg';
+import slider3 from '../assets/slider1.jpg';
 
-const heroBg = "./assets/gyser.jpeg";
 const services = [
   { title: "AC (Air Conditioning)", image: Ac, path: "/services/acrepair" },
   { title: "Washing Machine", image: washing_machine, path: "/services/washingmachine" },
@@ -61,15 +67,15 @@ const testimonials = [
 
 const Home = () => {
   return (
-    <div className="mt-16 py-12 px-6 md:px-16 lg:px-24">
+    <div className="mt-14 py-12 px-6 md:px-16 lg:px-24">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-gray-900">Wel-Come</h1>
-        <p className="mt-4 text-lg text-gray-900">
+        <p className="mt-1 text-lg text-gray-900">
           Your Trusted Partner for Home Appliance Repairs & Services.
         </p>
       </div>
 
-      <div className="mb-10 shadow-sm rounded-lg shadow-gray-900 overflow-hidden">
+      <div className="shadow-sm rounded-lg shadow-gray-900 overflow-hidden">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation
@@ -78,15 +84,14 @@ const Home = () => {
           loop={true}
         >
           {[
-            gyser,
-            gyser,
-            gyser,
+            slider2, slider1, slider3
           ].map((img, index) => (
             <SwiperSlide key={index}>
               <img
                 src={img}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-96 object-cover"
+                className="w-full h-116 object-cover"
+                loading="lazy"
               />
             </SwiperSlide>
           ))}
@@ -106,7 +111,15 @@ const Home = () => {
               className="rounded-xl overflow-hidden shadow-sm shadow-gray-900 bg-white"
             >
               <Link to={service.path}>
-                <img src={service.image} alt={service.title} className="w-full object-cover" />
+                <LazyLoadImage
+                  src={service.image}
+                  alt={service.title}
+                  effect="blur"
+                  wrapperProps={{
+                    style: { transitionDelay: "1s" },
+                  }}
+                  className="w-full object-cover"
+                />
               </Link>
 
               <div className="p-4 text-center">
@@ -135,9 +148,9 @@ const Home = () => {
       <div
         className="bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-white text-center px-4"
         style={{
-          backgroundImage: `url(${gyser})`,
+          backgroundImage: `url(${Oven})`,
           backgroundBlendMode: "overlay",
-          backgroundColor: "rgba(0,0,0,0.7)",
+          backgroundColor: "rgba(0,0,0,0.4)",
         }}
       >
         <h1 className="text-3xl md:text-4xl font-bold">

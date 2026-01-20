@@ -1,16 +1,19 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import gyser from '../assets/gyser.jpeg'
+import gyser_repair from '../assets/gyser_repair.jpeg'
+import CCTV from '../assets/CCTV.jpeg'
+import LED from '../assets/LED.jpeg'
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import CountUp from "react-countup";
 import { FaAward, FaPhoneAlt, FaRegCalendarAlt, FaSmileBeam, FaTools } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-
-
-
+import slider1 from '../assets/slider1.jpg';
+import slider2 from '../assets/slider2.png';
+import slider3 from '../assets/slider3.png';
 
 const About = () => {
     const statsData = [
@@ -39,15 +42,13 @@ const About = () => {
                     loop={true}
                 >
                     {[
-                        gyser,
-                        gyser,
-                        gyser,
+                        slider1, slider2, slider3
                     ].map((img, index) => (
                         <SwiperSlide key={index}>
                             <img
                                 src={img}
                                 alt={`Slide ${index + 1}`}
-                                className="w-full h-96 object-cover"
+                                className="w-full h-116 object-cover"
                             />
                         </SwiperSlide>
                     ))}
@@ -64,16 +65,17 @@ const About = () => {
                     </p>
                 </div>
                 <img
-                    src={gyser}
+                    src={CCTV}
                     alt="About Us"
-                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-76 mt-4 object-cover"
+                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-84 mt-4 object-cover"
                 />
             </div>
-            <div className="grid md:grid-cols-2 mt-10 gap-8 items-center mt-20">
+            <div className="grid md:grid-cols-2 mt-20 gap-8 items-center">
                 <img
-                    src={gyser}
+                    src={gyser_repair}
                     alt="About Us"
                     className="rounded-lg shadow-sm shadow-gray-900 w-full h-84 object-cover"
+                    loading="lazy"
                 />
                 <div>
                     <h2 className="text-3xl font-bold text-gray-900">Home Repair & Services</h2>
@@ -131,9 +133,9 @@ const About = () => {
                 viewport={{ once: false }} // Trigger animation only once
                 className="relative bg-cover bg-center h-[400px] flex flex-col items-center justify-center text-center text-white mt-30"
                 style={{
-                    backgroundImage: `url(${gyser})`,
+                    backgroundImage: `url(${LED})`,
                     backgroundBlendMode: "overlay",
-                    backgroundColor: "rgba(0,0,0,0.8)", // Dark overlay effect
+                    backgroundColor: "rgba(0,0,0,0.5)", // Dark overlay effect
                 }}
             >
                 {/* Heading */}
@@ -145,7 +147,7 @@ const About = () => {
                 <div className="mt-10 flex gap-4">
                     <a
                         href="tel:7691888950"
-                        className="bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300 flex gap-2 items-center"
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300 flex gap-2 items-center"
                     >
                         <FaPhoneAlt />
                         Call Now

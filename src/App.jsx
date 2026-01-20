@@ -20,6 +20,7 @@ import ChimneyRepair from './pages/services/ChimneyRepair';
 import AirDryer from './pages/services/AirDryer';
 import AirCompressor from './pages/services/AirCompressor';
 import Privacy from './pages/Privacy';
+import NotFound from './pages/NotFound';
 
 
 const router = createBrowserRouter([
@@ -45,9 +46,10 @@ const router = createBrowserRouter([
       { path: "/services/compressor", element: <AirCompressor /> },
       { path: "/faq", element: <Faq /> },
       { path: "/contact", element: <Contact /> },
-      { path: "/policy", element: <Privacy /> }
+      { path: "/policy", element: <Privacy /> },
     ],
   },
+  { path: "/*", element: <NotFound /> }
 ]);
 
 const App = () => {

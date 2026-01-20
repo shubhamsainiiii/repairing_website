@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 import Ac from '../assets/Ac.jpeg';
@@ -13,6 +14,10 @@ import purifier from '../assets/purifier.jpeg';
 import dispenser from '../assets/dispenser.jpeg';
 import CCTV from '../assets/CCTV.jpeg';
 import chimney from '../assets/chimney.jpeg';
+import Air_dryer from '../assets/Air_dryer.png';
+import Air_Compressor from '../assets/Air_Compressor.png';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const services = [
     {
@@ -84,13 +89,13 @@ const services = [
     {
         name: 'Air Dryer',
         path: '/services/dryer',
-        img: chimney,
+        img: Air_dryer,
         desc: 'Keep your kitchen smoke-free and safe.'
     },
     {
         name: 'Air Compressor',
         path: '/services/compressor',
-        img: chimney,
+        img: Air_Compressor,
         desc: 'Keep your kitchen smoke-free and safe.'
     }
 ];
@@ -109,11 +114,20 @@ const OurServices = () => {
                         key={index}
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.2, duration: 0.3 }}
+                        transition={{ delay: index * 0.1, duration: 0.5 }}
                         viewport={{ once: false }}
                         className="rounded-xl overflow-hidden shadow-sm shadow-gray-900 bg-white">
                         <Link to={service.path}>
-                            <img src={service.img} alt={service.name} className="w-full object-cover" />
+                            <LazyLoadImage
+                                src={service.img}
+                                alt={service.name}
+                                effect="blur"
+                                wrapperProps={{
+                                    style: { transitionDelay: "2s" },
+                                }}
+                                viewport={{ once: false }}
+                                className="w-full object-cover"
+                            />
                         </Link>
                         <div className="p-4 text-center">
                             <h3 className="font-bold mb-2 text-xl text-gray-900">{service.name}</h3>

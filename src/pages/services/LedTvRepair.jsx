@@ -2,33 +2,10 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Ac from '/Users/Rk Indora/Desktop/machinesystem/project/src/assets/Ac.jpeg';
 import { FaPhoneAlt } from 'react-icons/fa';
-
-const data = [
-    { size: "Upto 24 Inch", type: "Wall Mount", price: 200 },
-    { size: "Upto 24 Inch", type: "Table Mount", price: 170 },
-    { size: "25 to 32 Inch", type: "Wall Mount", price: 250 },
-    { size: "25 to 32 Inch", type: "Table Mount", price: 200 },
-    { size: "33 to 42 Inch", type: "Wall Mount", price: 325 },
-    { size: "33 to 42 Inch", type: "Table Mount", price: 250 },
-    { size: "43 to 50 Inch", type: "Wall Mount", price: 350 },
-    { size: "43 to 50 Inch", type: "Table Mount", price: 250 },
-    { size: "51 to 55 Inch", type: "Wall Mount", price: 400 },
-    { size: "51 to 55 Inch", type: "Table Mount", price: 300 },
-    { size: "56 to 65 Inch", type: "Wall Mount", price: 425 },
-    { size: "56 to 65 Inch", type: "Table Mount", price: 300 },
-    { size: "Above 65", type: "Wall Mount", price: 450 },
-    { size: "Above 65", type: "Table Mount", price: 350 },
-    { size: "TV Un-Installation (Upto 32 Inch)", type: "___", price: 170 },
-    { size: "TV Un-Installation (33 to 50 Inch)", type: "___", price: 200 },
-    { size: "TV Un-Installation (51 to 65 Inch)", type: "___", price: 250 },
-    { size: "Repair & Service (Upto 32 Inch)", type: "___", price: 399 },
-    { size: "Repair & Service (33 to 50 Inch)", type: "___", price: 449 },
-    { size: "Repair & Service (51 to 65 Inch)", type: "___", price: 499 }
-];
-
-
+import slider1 from '../../assets/slider1.jpg';
+import slider2 from '../../assets/slider2.png';
+import slider3 from '../../assets/slider3.png';
 const LedTvRepair = () => {
     return (
         <div className="mt-16 py-12 px-6 md:px-16 lg:px-24 font-primary">
@@ -44,15 +21,14 @@ const LedTvRepair = () => {
                         loop={true}
                     >
                         {[
-                            Ac,
-                            Ac,
-                            Ac
+                            slider2, slider1, slider3
                         ].map((img, index) => (
                             <SwiperSlide key={index}>
                                 <img
                                     src={img}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-full h-96 object-cover"
+                                    className="w-full h-116 object-cover"
+                                    loading="lazy"
                                 />
                             </SwiperSlide>
                         ))}
@@ -118,43 +94,24 @@ const LedTvRepair = () => {
 
                             <li><b>Customer Satisfaction Check : </b> We consider the job complete only after you review and are fully satisfied with the service provided.</li>
                         </ul>
-
-                        {/* Service Table */}
                         <div className="mb-8 mt-8">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">LED TV Repair/Service Prices</h3>
-                            <table className="w-full border font-medium text-gray-900 border-black text-center text-lg">
-                                <thead className="bg-gray-200">
-                                    <tr>
-                                        <th className="border p-2">Repair & Service</th>
-                                        <th className="border p-2">Type</th>
-                                        <th className="border p-2">Price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {data.map((row, i) => (
-                                        <tr key={i}>
-                                            <td className="border p-2">{row.size}</td>
-                                            <td className="border p-2">{row.type}</td>
-                                            <td className="border p-2">{row.price}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                            <p className="text-md text-gray-500 font-normal mt-4 text-center">
-                                Note : Final charges may vary based on model & condition. Technician will confirm after inspection.
-                            </p>
                             <h3 className="text-xl text-gray-900 font-bold mt-6 mb-2">Final Thoughts</h3>
                             <p className='pl-5 text-lg mt-4 text-justify text-gray-900'>A well-maintained LED TV is essential for uninterrupted entertainment and long-term performance, whether at home, in offices, or commercial setups. Regular servicing, timely screen or circuit repairs, and software updates can significantly extend your TV's lifespan and ensure optimal picture and sound quality. While simple tasks like cleaning the screen or adjusting settings can be done in-house, more complex problems like display issues, audio failure, or motherboard malfunctions require professional attention. Trust certified technicians to accurately diagnose and repair your LED TV, ensuring it operates smoothly, safely, and reliably for years to come.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center">
                 <a href="tel:+917691888950"
                     className="flex bg-blue-700 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
                     <FaPhoneAlt className="mt-1 text-sm mr-4" />
                     Book Now
                 </a>
+                <p className="text-md text-gray-500 font-normal mt-4 text-center max-w-md">
+                    Note: Final charges may vary based on the device model and condition. The
+                    technician will confirm the exact cost after inspection. Visiting charges
+                    will also be applicable.
+                </p>
             </div>
         </div>
     )
