@@ -162,9 +162,9 @@ const Header = () => {
     const navLinks = [
         { name: "Home", path: "/" },
         { name: "About Us", path: "/about" },
-        { name: "FAQs", path: "/faq" },
-        { name: "Privacy Policy", path: "/policy" },
         { name: "Contact", path: "/contact" },
+        { name: "Privacy Policy", path: "/policy" },
+        { name: "FAQs", path: "/faq" },
     ];
 
     const services = [
