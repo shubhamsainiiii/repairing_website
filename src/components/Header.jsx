@@ -212,9 +212,9 @@ const Header = () => {
 
                         {/* Desktop Services Dropdown */}
                         <div className="relative group">
-                            <span className="cursor-pointer font-semibold hover:text-gray-300">
+                            <Link to="/services" className="cursor-pointer font-semibold hover:text-gray-300">
                                 Our Services
-                            </span>
+                            </Link>
 
                             <div className="absolute left-0 mt-2 w-60 bg-white text-black rounded-md shadow-lg opacity-0 invisible scale-95 group-hover:opacity-100 group-hover:visible group-hover:scale-100 transition-all duration-300">
                                 <ul className="py-2">
