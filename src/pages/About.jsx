@@ -1,19 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import gyser_repair from '../assets/gyser_repair.jpeg'
 import CCTV from '../assets/CCTV.jpeg'
 import LED from '../assets/LED.jpeg'
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import CountUp from "react-countup";
 import { FaAward, FaPhoneAlt, FaRegCalendarAlt, FaSmileBeam, FaTools } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import slider1 from '../assets/slider1.jpg';
-import slider2 from '../assets/slider2.png';
-import slider3 from '../assets/slider3.png';
+import Slider from '../components/Slider';
 
 const About = () => {
     const statsData = [
@@ -23,145 +16,127 @@ const About = () => {
         { value: 10, label: "Years of Experience", icon: <FaRegCalendarAlt className="size-10 mb-4" /> },
     ];
     return (
-        <div className="text-gray-800 mt-16 py-12 px-6 md:px-16 lg:px-24">
+        <div className="text-gray-800 mt-16">
             {/* Header Section */}
-            <div className="text-center mb-10">
-                <h1 className="text-4xl font-bold text-gray-900">About Us</h1>
-                <p className="mt-4 text-lg text-gray-900">
-                    Your Trusted Partner for Home Appliance Repairs & Services.
-                </p>
+            <div className="py-12 px-6 md:px-16 lg:px-24 pb-0">
+                <div className="text-center mb-10">
+                    <h1 className="text-4xl font-bold text-gray-900">About Us</h1>
+                    <p className="mt-4 text-lg text-gray-900">
+                        Your Trusted Partner for Home Appliance Repairs & Services.
+                    </p>
+                </div>
             </div>
 
+            <Slider />
 
-            <div className="mb-10 shadow-sm rounded-lg shadow-gray-900 overflow-hidden">
-                <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
-                    navigation
-                    pagination={{ clickable: true }}
-                    autoplay={{ delay: 2000 }}
-                    loop={true}
+            <div className="py-12 px-6 md:px-16 lg:px-24 pt-10">
+                {/* Company Overview */}
+                <div className="grid md:grid-cols-2 gap-8 items-center mt-0">
+                    <div>
+                        <h2 className="text-3xl font-bold text-gray-900">Who We Are</h2>
+                        <p className="mt-4 text-gray-700 leading-relaxed text-lg font-medium text-justify">
+                            <b>Universal Repair Point</b> is a platform offering home appliance repair services at your home. Whether you need Washing Machine repair, AC service, TV installation and many more, Our thousands of qualified service professionals based throughout the india. Customer use our platform to book doorstep repair services.
+                            These services are delivered in the comfort of their home and at a time of their choosing. We promise to provide a reliable guaranteed super fast home service with quality and workmanship. To fulfill this promise, We work closely with service partners, enabling them with technology, training, products, tools and brand helping them succeed and deliver on this promise.We repair all major brands, makes and models. There is no matter where you bought it, we can fix it.
+                        </p>
+                    </div>
+                    <img
+                        src={CCTV}
+                        alt="About Us"
+                        className="rounded-lg shadow-sm shadow-gray-900 w-full h-84 mt-4 object-cover"
+                    />
+                </div>
+                <div className="grid md:grid-cols-2 mt-20 gap-8 items-center">
+                    <img
+                        src={gyser_repair}
+                        alt="About Us"
+                        className="rounded-lg shadow-sm shadow-gray-900 w-full h-84 object-cover"
+                        loading="lazy"
+                    />
+                    <div>
+                        <h2 className="text-3xl font-bold text-gray-900">Home Repair & Services</h2>
+                        <p className="mt-4 text-gray-700 text-lg leading-relaxed font-medium text-justify">
+                            <b>Universal Repair Point</b> provides professional and expert Home Appliance Repair & Services in Jaipur. We pride ourselves on our superior customer service and on going above and beyond to ensure our customers are 100 percent satisfied. Our experienced and skilled team uses the highest quality tools and materials to ensure your appliance performs at its optimum level. In addition, we strive to help you save money by repairing your appliance rather than replacing it.
+
+                            Whether you’re in need of a simple or extensive appliance repair, you can trust the experts at Universal Repair Point to fix the problem in a timely manner.
+                        </p>
+                    </div>
+                </div>
+                <motion.div
+                    className="text-white py-12 mt-20 bg-blue-900 shadow-sm shadow-gray-900"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.1 }} // Animate jab 20% visible ho
+                    variants={{
+                        visible: { transition: { staggerChildren: 0.6 } }, // Ek card complete hone ke baad dusra start hoga
+                    }}
                 >
-                    {[
-                        slider1, slider2, slider3
-                    ].map((img, index) => (
-                        <SwiperSlide key={index}>
-                            <img
-                                src={img}
-                                alt={`Slide ${index + 1}`}
-                                className="w-full h-116 object-cover"
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+                    <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                        {statsData.map((stat, index) => (
+                            <motion.div
+                                key={index}
+                                variants={{
+                                    hidden: { opacity: 0, y: 50 },
+                                    visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeIn" } },
+                                }}
+                                className="p-6 rounded-xl bg-blue-900 transition-all duration-500 shadow-sm shadow-black transform hover:scale-105 hover:shadow-gray-300 hover:shadow-sm"
+                            >
+                                <div className="flex flex-col items-center">
+                                    {stat.icon}
+                                    <h2 className="text-4xl font-bold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-400">
+                                        <CountUp
+                                            start={0}
+                                            end={stat.value}
+                                            duration={6}
+                                            separator=","
+                                            decimals={stat.value % 1 !== 0 ? 2 : 0}
+                                            decimal="."
+                                            suffix={stat.label.includes("Years") ? "+" : "k"}
+                                        />
+                                    </h2>
+                                    <p className="text-lg mt-2 font-semibold text-transparent bg-clip-text bg-gradient-to-l from-pink-500 to-yellow-400">
+                                        {stat.label}
+                                    </p>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }} // Start hidden, slightly below
+                    whileInView={{ opacity: 1, y: 0 }} // Animate to visible when in view
+                    transition={{ duration: 1 }} // Smooth transition
+                    viewport={{ once: false }} // Trigger animation only once
+                    className="relative bg-cover bg-center h-[400px] flex flex-col items-center justify-center text-center text-white mt-30"
+                    style={{
+                        backgroundImage: `url(${LED})`,
+                        backgroundBlendMode: "overlay",
+                        backgroundColor: "rgba(0,0,0,0.5)", // Dark overlay effect
+                    }}
+                >
+                    {/* Heading */}
+                    <h1 className="text-3xl md:text-4xl font-bold mt-4 ">
+                        Are Your Home Appliances Not Working Properly? <br /> Contact Us Now!
+                    </h1>
 
-            {/* Company Overview */}
-            <div className="grid md:grid-cols-2 gap-8 items-center mt-20">
-                <div>
-                    <h2 className="text-3xl font-bold text-gray-900">Who We Are</h2>
-                    <p className="mt-4 text-gray-700 leading-relaxed text-lg font-medium text-justify">
-                        <b>Universal Repair Point</b> is a platform offering home appliance repair services at your home. Whether you need Washing Machine repair, AC service, TV installation and many more, Our thousands of qualified service professionals based throughout the india. Customer use our platform to book doorstep repair services.
-                        These services are delivered in the comfort of their home and at a time of their choosing. We promise to provide a reliable guaranteed super fast home service with quality and workmanship. To fulfill this promise, We work closely with service partners, enabling them with technology, training, products, tools and brand helping them succeed and deliver on this promise.We repair all major brands, makes and models. There is no matter where you bought it, we can fix it.
-                    </p>
-                </div>
-                <img
-                    src={CCTV}
-                    alt="About Us"
-                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-84 mt-4 object-cover"
-                />
-            </div>
-            <div className="grid md:grid-cols-2 mt-20 gap-8 items-center">
-                <img
-                    src={gyser_repair}
-                    alt="About Us"
-                    className="rounded-lg shadow-sm shadow-gray-900 w-full h-84 object-cover"
-                    loading="lazy"
-                />
-                <div>
-                    <h2 className="text-3xl font-bold text-gray-900">Home Repair & Services</h2>
-                    <p className="mt-4 text-gray-700 text-lg leading-relaxed font-medium text-justify">
-                        <b>Universal Repair Point</b> provides professional and expert Home Appliance Repair & Services in Jaipur. We pride ourselves on our superior customer service and on going above and beyond to ensure our customers are 100 percent satisfied. Our experienced and skilled team uses the highest quality tools and materials to ensure your appliance performs at its optimum level. In addition, we strive to help you save money by repairing your appliance rather than replacing it.
-
-                        Whether you’re in need of a simple or extensive appliance repair, you can trust the experts at Universal Repair Point to fix the problem in a timely manner.
-                    </p>
-                </div>
-            </div>
-            <motion.div
-                className="text-white py-12 mt-20 bg-blue-900 shadow-sm shadow-gray-900"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }} // Animate jab 20% visible ho
-                variants={{
-                    visible: { transition: { staggerChildren: 0.6 } }, // Ek card complete hone ke baad dusra start hoga
-                }}
-            >
-                <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    {statsData.map((stat, index) => (
-                        <motion.div
-                            key={index}
-                            variants={{
-                                hidden: { opacity: 0, y: 50 },
-                                visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeIn" } },
-                            }}
-                            className="p-6 rounded-xl bg-blue-900 transition-all duration-500 shadow-sm shadow-black transform hover:scale-105 hover:shadow-gray-300 hover:shadow-sm"
+                    {/* Buttons */}
+                    <div className="mt-10 flex gap-4">
+                        <a
+                            href="tel:8058129195"
+                            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300 flex gap-2 items-center"
                         >
-                            <div className="flex flex-col items-center">
-                                {stat.icon}
-                                <h2 className="text-4xl font-bold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-400">
-                                    <CountUp
-                                        start={0}
-                                        end={stat.value}
-                                        duration={6}
-                                        separator=","
-                                        decimals={stat.value % 1 !== 0 ? 2 : 0}
-                                        decimal="."
-                                        suffix={stat.label.includes("Years") ? "+" : "k"}
-                                    />
-                                </h2>
-                                <p className="text-lg mt-2 font-semibold text-transparent bg-clip-text bg-gradient-to-l from-pink-500 to-yellow-400">
-                                    {stat.label}
-                                </p>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
-            </motion.div>
-            <motion.div
-                initial={{ opacity: 0, y: 50 }} // Start hidden, slightly below
-                whileInView={{ opacity: 1, y: 0 }} // Animate to visible when in view
-                transition={{ duration: 1 }} // Smooth transition
-                viewport={{ once: false }} // Trigger animation only once
-                className="relative bg-cover bg-center h-[400px] flex flex-col items-center justify-center text-center text-white mt-30"
-                style={{
-                    backgroundImage: `url(${LED})`,
-                    backgroundBlendMode: "overlay",
-                    backgroundColor: "rgba(0,0,0,0.5)", // Dark overlay effect
-                }}
-            >
-                {/* Heading */}
-                <h1 className="text-3xl md:text-4xl font-bold mt-4 ">
-                    Are Your Home Appliances Not Working Properly? <br /> Contact Us Now!
-                </h1>
+                            <FaPhoneAlt />
+                            Call Now
+                        </a>
 
-                {/* Buttons */}
-                <div className="mt-10 flex gap-4">
-                    <a
-                        href="tel:7691888950"
-                        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300 flex gap-2 items-center"
-                    >
-                        <FaPhoneAlt />
-                        Call Now
-                    </a>
-
-                    <a
-                        href="mailto:shubhamthoi27@gmail.com"
-                        className="bg-gray-100 hover:bg-gray-300 text-gray-900 px-6 py-3 rounded-md font-semibold transition-all duration-300"
-                    >
-                        Contact Us
-                    </a>
-                </div>
-            </motion.div>
-
+                        <a
+                            href="mailto:shubhamthoi27@gmail.com"
+                            className="bg-gray-100 hover:bg-gray-300 text-gray-900 px-6 py-3 rounded-md font-semibold transition-all duration-300"
+                        >
+                            Contact Us
+                        </a>
+                    </div>
+                </motion.div>
+            </div>
         </div>
     );
 };

@@ -1,39 +1,16 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import Slider from '../../components/Slider';
 import { FaPhoneAlt } from 'react-icons/fa';
-import slider1 from '../../assets/slider1.jpg';
-import slider2 from '../../assets/slider2.png';
-import slider3 from '../../assets/slider3.png';
+
 const MicrowaveRepair = () => {
     return (
-        <div className="mt-16 py-12 px-6 md:px-16 lg:px-24">
-            <div className="max-w-6xl mx-auto">
+        <div className="mt-16">
+            <div className="py-12 px-6 md:px-16 lg:px-24 pb-0 max-w-6xl mx-auto">
                 {/* Header Title */}
                 <h1 className="text-3xl md:text-4xl text-center font-bold mb-4 text-gray-900">Microwave Services</h1>
-                <div className="mb-10 shadow-sm rounded-lg shadow-gray-900 overflow-hidden">
-                    <Swiper
-                        modules={[Navigation, Pagination, Autoplay]}
-                        navigation
-                        pagination={{ clickable: true }}
-                        autoplay={{ delay: 2000 }}
-                        loop={true}
-                    >
-                        {[
-                            slider1, slider2, slider3
-                        ].map((img, index) => (
-                            <SwiperSlide key={index}>
-                                <img
-                                    src={img}
-                                    alt={`Slide ${index + 1}`}
-                                    className="w-full h-116 object-cover"
-                                    loading="lazy"
-                                />
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
+            </div>
+            <Slider />
+            <div className="py-12 px-6 md:px-16 lg:px-24 pt-10 max-w-6xl mx-auto">
                 <div className="flex justify-center">
                     <div className="w-full max-w-6xl">
                         <h2 className="text-xl font-bold mb-4 text-gray-900 text-center">
@@ -103,7 +80,7 @@ const MicrowaveRepair = () => {
                 </div>
             </div>
             <div className="flex flex-col items-center mt-6">
-                <a href="tel:+917691888950"
+                <a href="tel:+918058129195"
                     className="flex bg-blue-700 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
                     <FaPhoneAlt className="mt-1 text-sm mr-4" />
                     Book Now

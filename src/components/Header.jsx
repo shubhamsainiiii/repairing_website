@@ -65,7 +65,7 @@
 //                     </div>
 //                 </nav>
 //                 <button className="">
-//                     <a href="tel:7691888950" className="hidden md:flex items-center bg-blue-700 font-semibold px-4 py-2 rounded-lg hover:bg-blue-800 transition-all duration-500">
+//                     <a href="tel:8058129195" className="hidden md:flex items-center bg-blue-700 font-semibold px-4 py-2 rounded-lg hover:bg-blue-800 transition-all duration-500">
 //                         Enquiry Now <FaPhone className='ml-2' />
 //                     </a>
 //                 </button>
@@ -232,7 +232,7 @@ const Header = () => {
 
                         {/* Enquiry Button */}
                         <a
-                            href="tel:7691888950"
+                            href="tel:8058129195"
                             className="flex items-center bg-blue-700 px-4 py-2 rounded-lg font-semibold hover:bg-blue-800 transition"
                         >
                             Enquiry Now <FaPhone className="ml-2" />
@@ -280,7 +280,7 @@ const Header = () => {
 
                         <motion.a
                             variants={itemVariants}
-                            href="tel:7691888950"
+                            href="tel:8058129195"
                             className="flex items-center bg-blue-700 px-6 py-3 rounded-lg font-semibold"
                         >
                             Enquiry Now <FaPhone className="ml-2" />

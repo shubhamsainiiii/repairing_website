@@ -10,11 +10,11 @@ const Footer = () => {
                 <div>
                     <h2 className="text-lg font-bold mb-4">Info About Us</h2>
                     <p className="flex items-center gap-2 mt-2"><FaClock />Opening Hours : 24x7</p>
-                    <a href="tel:7691888950" className="flex items-center gap-2 mt-2"><FaPhoneAlt /> +91-7691888950</a>
+                    <a href="tel:8058129195" className="flex items-center gap-2 mt-2"><FaPhoneAlt /> +91-8058129195</a>
                     <a href="mailto:universalrepairpoints@gmail.com" className="flex items-center gap-2 mt-2"><FaEnvelope /> universalrepairpoints@gmail.com</a>
                     <p className="flex items-center gap-2 mt-2"><FaMapMarkerAlt /> Murlipura, Jaipur</p>
                     <button className="">
-                        <a href="tel:7691888950" className="flex justify-around gap-3 items-center mt-4 bg-blue-700 font-semibold px-3.5 py-2.5 rounded-lg hover:bg-blue-800 transition-all duration-500">
+                        <a href="tel:8058129195" className="flex justify-around gap-3 items-center mt-4 bg-blue-700 font-semibold px-3.5 py-2.5 rounded-lg hover:bg-blue-800 transition-all duration-500">
                             Enquiry Now <FaPhone />
                         </a>
                     </button>
@@ -84,7 +84,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="fixed bottom-8 right-5 z-50">
-                    <a href="tel:7691888950" className="text-blue-600 text-md cursor-pointer hover:text-blue-700 duration-300">
+                    <a href="tel:8058129195" className="text-blue-600 text-md cursor-pointer hover:text-blue-700 duration-300">
                         <FaPhone className="size-11 border-2 rounded-full p-1 animate-bounce" />
                     </a>
                 </div>

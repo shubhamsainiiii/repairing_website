@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import { FaBook, FaPhoneAlt, FaSearch, FaTools } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-// import gyser from '../assets/gyser.jpeg'
+import { Autoplay } from "swiper/modules";
 import Ac from '../assets/Ac.jpeg'
 import Oven from '../assets/oven.jpeg'
 import rahul from '../assets/rahul.png'
@@ -16,9 +15,7 @@ import washing_machine from '../assets/washing_machine.jpeg';
 import refrigerator from '../assets/refrigerator.jpeg'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import slider1 from '../assets/slider1.jpg';
-import slider2 from '../assets/slider1.jpg';
-import slider3 from '../assets/slider1.jpg';
+import Slider from '../components/Slider';
 
 const services = [
   { title: "AC (Air Conditioning)", image: Ac, path: "/services/acrepair" },
@@ -75,28 +72,29 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="shadow-sm rounded-lg shadow-gray-900 overflow-hidden">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 2000 }}
-          loop={true}
-        >
-          {[
-            slider2, slider1, slider3
-          ].map((img, index) => (
-            <SwiperSlide key={index}>
-              <img
-                src={img}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-116 object-cover"
-                loading="lazy"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      <Slider>
+        <div className="h-full flex items-center justify-center pointer-events-none bg-black/40">
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-center text-white px-4 pointer-events-auto"
+          >
+            <h1 className="text-4xl md:text-6xl font-bold">
+              Universal Repair Point
+            </h1>
+            <p className="mt-4 text-lg md:text-xl">
+              Home Appliances Repair & Services
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block mt-6 bg-blue-700 hover:bg-blue-800 px-6 py-3 rounded-md font-semibold"
+            >
+              Enquiry Now
+            </Link>
+          </motion.div>
+        </div>
+      </Slider>
 
       <div className="py-16 px-6 max-w-8xl mx-auto">
         <h2 className="text-4xl md:text-3xl font-bold text-center mb-10">Our Best Services</h2>
@@ -164,7 +162,7 @@ const Home = () => {
             About More
           </Link>
           <a
-            href="tel:7691888950"
+            href="tel:8058129195"
             className="bg-gray-100 hover:bg-gray-300 text-gray-900 px-6 py-3 rounded-md font-semibold transition-all duration-300"
           >
             <FaPhoneAlt className="inline mr-2" /> Call Now

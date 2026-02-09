@@ -85,9 +85,9 @@
 //                 <p className="font-medium">
 //                     Phone No :
 //                     <a
-//                         href="tel:+917691888950"
+//                         href="tel:+918058129195"
 //                         className="text-gray-900 font-semibold"
-//                     >  +91-7691888950
+//                     >  +91-8058129195
 //                     </a>
 //                 </p>
 //             </div>
@@ -227,8 +227,8 @@
 //                 </p>
 //                 <p className="font-medium">
 //                     Phone No :
-//                     <a href="tel:+917691888950" className="text-gray-900 font-semibold">
-//                         +91-7691888950
+//                     <a href="tel:+918058129195" className="text-gray-900 font-semibold">
+//                         +91-8058129195
 //                     </a>
 //                 </p>
 //             </div>
@@ -385,10 +385,10 @@ const Contact = () => {
                 <p className="font-medium">
                     Phone No:{" "}
                     <a
-                        href="tel:+917691888950"
+                        href="tel:+918058129195"
                         className="text-gray-900 font-semibold"
                     >
-                        +91-7691888950
+                        +91-8058129195
                     </a>
                 </p>
             </div>

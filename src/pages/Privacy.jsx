@@ -89,7 +89,7 @@ const Privacy = () => {
                         <h2 className="text-xl font-semibold text-gray-900 mb-2">9. Contact Us</h2>
                         <p className="text-gray-900 text-lg text-justify">
                             For any questions regarding this policy, please contact us at :
-                            <a href="tel:7691888950" className="flex items-center gap-2 mt-2"><FaPhoneAlt /> +91-7691888950</a>
+                            <a href="tel:8058129195" className="flex items-center gap-2 mt-2"><FaPhoneAlt /> +91-8058129195</a>
                             <a href="mailto:universalrepairpoints@gmail.com" className="flex items-center gap-2 mt-2"><FaEnvelope /> universalrepairpoints@gmail.com</a>
                         </p>
                     </div>
