@@ -5,11 +5,11 @@ import { FaPhoneAlt } from 'react-icons/fa';
 const WaterCoolerRepair = () => {
     return (
         <div className="mt-16">
+            <Slider />
             <div className="py-12 px-6 md:px-16 lg:px-24 pb-0 max-w-6xl mx-auto">
                 {/* Header Title */}
                 <h1 className="text-3xl md:text-4xl text-center font-bold mb-4 text-gray-900">Water Cooler Services</h1>
             </div>
-            <Slider />
             <div className="py-12 px-6 md:px-16 lg:px-24 pt-10 max-w-6xl mx-auto">
                 <div className="flex justify-center">
                     <div className="w-full max-w-6xl">
@@ -76,13 +76,13 @@ const WaterCoolerRepair = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mt-6 mb-10">
                 <a href="tel:+918058129195"
                     className="flex bg-blue-700 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
                     <FaPhoneAlt className="mt-1 text-sm mr-4" />
                     Book Now
                 </a>
-                <p className="text-md text-gray-500 font-normal mt-4 text-center max-w-md">
+                <p className="text-md text-gray-500 font-normal mt-6 text-center max-w-md">
                     Note: Final charges may vary based on the device model and condition. The
                     technician will confirm the exact cost after inspection. Visiting charges
                     will also be applicable.

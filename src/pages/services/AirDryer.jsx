@@ -5,14 +5,13 @@ import Slider from '../../components/Slider';
 const AirDryer = () => {
     return (
         <div className="mt-16">
+            <Slider />
             <div className="py-12 px-6 md:px-16 lg:px-24 pb-0">
                 <div className="max-w-6xl mx-auto">
                     {/* Header Title */}
                     <h1 className="text-3xl md:text-4xl text-center font-bold mb-4 text-gray-900">Air Dryer Services</h1>
                 </div>
             </div>
-
-            <Slider />
 
             <div className="py-12 px-6 md:px-16 lg:px-24 pt-10">
                 <div className="max-w-6xl mx-auto">
@@ -83,13 +82,13 @@ const AirDryer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center my-6">
+                <div className="flex flex-col items-center mt-6">
                     <a href="tel:+918058129195"
                         className="flex bg-blue-700 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
                         <FaPhoneAlt className="mt-1 text-sm mr-4" />
                         Book Now
                     </a>
-                    <p className="text-md text-gray-500 font-normal mt-4 text-center max-w-md">
+                    <p className="text-md text-gray-500 font-normal mt-6 text-center max-w-md">
                         Note: Final charges may vary based on the device model and condition. The
                         technician will confirm the exact cost after inspection. Visiting charges
                         will also be applicable.

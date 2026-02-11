@@ -17,6 +17,7 @@ const About = () => {
     ];
     return (
         <div className="text-gray-800 mt-16">
+            <Slider />
             {/* Header Section */}
             <div className="py-12 px-6 md:px-16 lg:px-24 pb-0">
                 <div className="text-center mb-10">
@@ -26,8 +27,6 @@ const About = () => {
                     </p>
                 </div>
             </div>
-
-            <Slider />
 
             <div className="py-12 px-6 md:px-16 lg:px-24 pt-10">
                 {/* Company Overview */}

@@ -3,9 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaBook, FaPhoneAlt, FaSearch, FaTools } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { Autoplay } from "swiper/modules";
 import Ac from '../assets/Ac.jpeg'
 import Oven from '../assets/oven.jpeg'
 import rahul from '../assets/rahul.png'
@@ -64,14 +61,7 @@ const testimonials = [
 
 const Home = () => {
   return (
-    <div className="mt-14 py-12 px-6 md:px-16 lg:px-24">
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-gray-900">Wel-Come</h1>
-        <p className="mt-1 text-lg text-gray-900">
-          Your Trusted Partner for Home Appliance Repairs & Services.
-        </p>
-      </div>
-
+    <div className="mt-14">
       <Slider>
         <div className="h-full flex items-center justify-center pointer-events-none bg-black/40">
           <motion.div
@@ -96,7 +86,29 @@ const Home = () => {
         </div>
       </Slider>
 
-      <div className="py-16 px-6 max-w-8xl mx-auto">
+      <div className=" py-10 px-6 md:px-16 lg:px-24">
+        <div className="text-center mb-10">
+          <h1 className="text-4xl font-bold text-gray-900">Wel-Come</h1>
+          <p className="mt-1 text-lg text-gray-900">
+            Your Trusted Partner for Home Appliance Repairs & Services.
+          </p>
+          <p className="mt-6 max-w-8xl mx-auto text-gray-700 text-lg leading-relaxed text-justify">
+            We provide reliable and professional repair services for all major home
+            appliances, ensuring your daily life runs smoothly without interruptions.
+            From air conditioners, water purifiers, washing machines, refrigerators,
+            geysers, and kitchen appliances to complete maintenance solutions — our
+            experienced technicians handle every job with precision and care. Our goal is simple fast service, honest pricing, and long-lasting repairs.
+            We use genuine spare parts, modern tools, and proven techniques to deliver
+            dependable results. With same-day doorstep service, transparent charges,
+            and dedicated customer support, we make appliance repair easy, safe, and
+            completely hassle-free for homes and businesses across the city. Choose us for quality workmanship, trusted professionals, and service you
+            can count on every time. Your comfort and satisfaction are always our top
+            priorities.
+          </p>
+        </div>
+      </div>
+
+      <div className="px-6 max-w-8xl mx-auto">
         <h2 className="text-4xl md:text-3xl font-bold text-center mb-10">Our Best Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
@@ -213,22 +225,26 @@ const Home = () => {
       <div className="mt-30 text-center">
         <h2 className="text-3xl font-bold mb-12 text-gray-800">What Our Customers Say</h2>
 
-        <Swiper modules={[Autoplay]} spaceBetween={50} slidesPerView={1} loop autoplay={{ delay: 3000 }} className="max-w-3xl mx-auto px-4 rounded-xl shadow-sm shadow-gray-900">
-          {testimonials.map((item, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="bg-white p-8">
-                <div className="flex flex-col items-center gap-4">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-20 h-20 rounded-full border-4 border-gray-900 object-cover shadow-md" />
-                  <p className="italic text-gray-800 text-lg">"{item.message}"</p>
-                  <h4 className="text-lg font-bold text-gray-900">{item.name}</h4>
-                </div>
+        <Slider
+          slides={testimonials}
+          slideRenderer={(item) => (
+            <div className="bg-white p-8">
+              <div className="flex flex-col items-center gap-4">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-20 h-20 rounded-full border-4 border-gray-900 object-cover shadow-md" />
+                <p className="italic text-gray-800 text-lg">"{item.message}"</p>
+                <h4 className="text-lg font-bold text-gray-900">{item.name}</h4>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            </div>
+          )}
+          className="max-w-3xl mx-auto"
+          swiperClassName="px-4 rounded-xl shadow-sm shadow-gray-900"
+          spaceBetween={50}
+          slidesPerView={1}
+          autoplay={{ delay: 3000 }}
+        />
       </div>
     </div>
   );

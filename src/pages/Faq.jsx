@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { motion } from 'framer-motion';
+import slider3 from '../assets/FAQ.jpg';
 
 const faqs = [
     {
@@ -47,35 +49,53 @@ const Faq = () => {
     };
 
     return (
-        <section className="text-gray-800 mt-16 py-12 px-6">
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-10">
+        <section className="text-gray-800 mt-12 py-12 px-6 max-w-7xl mx-auto">
+            <h2 className="text-4xl font-bold text-center text-gray-900">
                 FAQs for an Appliance Repairing Service
             </h2>
-            <div className="max-w-2xl mx-auto space-y-8">
-                {faqs.map((faq, index) => (
-                    <div
-                        key={index}
-                        className="bg-gray-800 shadow-md shadow-gray-500 rounded-xl overflow-hidden transition-transform duration-400 hover:scale-[1.03] font-medium"
-                    >
-                        <button
-                            onClick={() => toggleFAQ(index)}
-                            className="w-full flex justify-between items-center px-6 py-4 font-semibold text-gray-900 cursor-pointer bg-white hover:bg-gray-200 transition"
-                        >
-                            <span>Q {index + 1} : {faq.question}</span>
-                            {openIndex === index ? (
-                                <ChevronUp className="w-5 h-5 text-gray-900" />
-                            ) : (
-                                <ChevronDown className="w-5 h-5 text-gray-900" />
-                            )}
-                        </button>
+            <div className="flex flex-col items-center gap-8">
+                {/* Top Side: Image */}
+                <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                    className="w-full flex justify-center"
+                >
+                    <img
+                        src={slider3}
+                        alt="FAQ Support"
+                        className="w-full max-w-2xl h-auto object-contain"
+                    />
+                </motion.div>
+
+                {/* Bottom Side: FAQs */}
+                <div className="w-full max-w-4xl space-y-8">
+                    {faqs.map((faq, index) => (
                         <div
-                            className={`px-6 text-gray-100 text-justify overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[500px] py-4' : 'max-h-0'
-                                }`}
+                            key={index}
+                            className="bg-gray-800 shadow-md shadow-gray-500 rounded-xl overflow-hidden transition-transform duration-400 hover:scale-[1.01] font-medium"
                         >
-                            {faq.answer}
+                            <button
+                                onClick={() => toggleFAQ(index)}
+                                className="w-full flex justify-between items-center px-6 py-4 font-semibold text-gray-900 cursor-pointer bg-white hover:bg-gray-200 transition"
+                            >
+                                <span>Q {index + 1} : {faq.question}</span>
+                                {openIndex === index ? (
+                                    <ChevronUp className="w-5 h-5 text-gray-900" />
+                                ) : (
+                                    <ChevronDown className="w-5 h-5 text-gray-900" />
+                                )}
+                            </button>
+                            <div
+                                className={`px-6 text-gray-100 text-justify overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[500px] py-4' : 'max-h-0'
+                                    }`}
+                            >
+                                {faq.answer}
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </section>
     );

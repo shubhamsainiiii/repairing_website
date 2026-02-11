@@ -20,7 +20,6 @@ const Privacy = () => {
                         <h2 className="text-xl font-semibold text-gray-900 mb-2">1. Information We Collect</h2>
                         <ul className="list-disc ml-6 text-gray-900 text-lg text-justify">
                             <li>Personal details (name, email, phone) when you fill out forms.</li>
-                            <li>Device and browser data (IP address, OS, cookies, etc.).</li>
                             <li>Service inquiries or booking-related data.</li>
                         </ul>
                     </div>
@@ -35,13 +34,13 @@ const Privacy = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    {/* <div>
                         <h2 className="text-xl font-semibold text-gray-900 mb-2">3. Cookies</h2>
                         <p className="text-gray-900 text-lg text-justify">
                             We use cookies to personalize content and analyze traffic. You can disable cookies in your
                             browser settings, but some features may not work as intended.
                         </p>
-                    </div>
+                    </div> */}
 
                     <div>
                         <h2 className="text-xl font-semibold text-gray-900 mb-2">4. Data Sharing</h2>
@@ -52,13 +51,13 @@ const Privacy = () => {
                         </p>
                     </div>
 
-                    <div>
+                    {/* <div>
                         <h2 className="text-xl font-semibold text-gray-900 mb-2">5. Security</h2>
                         <p className="text-gray-900 text-lg text-justify">
                             We use industry-standard security measures to protect your data. However, no method is 100%
                             secure, and we cannot guarantee absolute protection.
                         </p>
-                    </div>
+                    </div> */}
 
                     <div>
                         <h2 className="text-xl font-semibold text-gray-900 mb-2">6. Your Rights</h2>
