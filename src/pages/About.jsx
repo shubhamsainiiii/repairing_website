@@ -128,7 +128,7 @@ const About = () => {
                         </a>
 
                         <a
-                            href="mailto:shubhamthoi27@gmail.com"
+                            href="mailto:universalrepairpoints@gmail.com"
                             className="bg-gray-100 hover:bg-gray-300 text-gray-900 px-6 py-3 rounded-md font-semibold transition-all duration-300"
                         >
                             Contact Us

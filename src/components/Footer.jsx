@@ -79,7 +79,7 @@ const Footer = () => {
 
             <div className="mt-1 border-t border-gray-100">
                 <div className="fixed bottom-9 left-5 z-50">
-                    <a href="https://wa.me/8058129195" className="">
+                    <a href="https://wa.me/918058129195" className="">
                         <FaWhatsapp className="text-green-400 size-11 animate-bounce hover:text-green-500 duration-500" />
                     </a>
                 </div>
