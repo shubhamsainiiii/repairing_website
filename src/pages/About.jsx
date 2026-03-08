@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import gyser_repair from '../assets/gyser_repair.jpeg'
-import CCTV from '../assets/CCTV.jpeg'
-import LED from '../assets/LED.jpeg'
+import gyser_repair from '../assets/optimized/gyser_repair.webp'
+import CCTV from '../assets/optimized/CCTV.webp'
+import LED from '../assets/optimized/LED.webp'
 import CountUp from "react-countup";
 import { FaAward, FaPhoneAlt, FaRegCalendarAlt, FaSmileBeam, FaTools } from 'react-icons/fa';
 import { motion } from 'framer-motion';

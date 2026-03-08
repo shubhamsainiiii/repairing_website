@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { motion } from 'framer-motion';
-import slider3 from '../assets/FAQ.jpg';
+import slider3 from '../assets/optimized/FAQ.webp';
 
 const faqs = [
     {

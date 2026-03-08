@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-import Ac from '../assets/Ac.jpeg';
-import washing_machine from '../assets/washing_machine.jpeg';
-import refrigerator from '../assets/refrigerator.jpeg';
-import oven from '../assets/oven.jpeg';
-import gyser_repair from '../assets/gyser_repair.jpeg';
-import LED from '../assets/LED.jpeg';
-import water_cooler from '../assets/water_cooler.jpeg';
-import purifier from '../assets/purifier.jpeg';
-import dispenser from '../assets/dispenser.jpeg';
-import CCTV from '../assets/CCTV.jpeg';
-import chimney from '../assets/chimney.jpeg';
-import Air_dryer from '../assets/Air_dryer.png';
-import Air_Compressor from '../assets/Air_Compressor.png';
+import Ac from '../assets/optimized/Ac.webp';
+import washing_machine from '../assets/optimized/washing_machine.webp';
+import refrigerator from '../assets/optimized/refrigerator.webp';
+import oven from '../assets/optimized/oven.webp';
+import gyser_repair from '../assets/optimized/gyser_repair.webp';
+import LED from '../assets/optimized/LED.webp';
+import water_cooler from '../assets/optimized/water_cooler.webp';
+import purifier from '../assets/optimized/purifier.webp';
+import dispenser from '../assets/optimized/dispenser.webp';
+import CCTV from '../assets/optimized/CCTV.webp';
+import chimney from '../assets/optimized/chimney.webp';
+import Air_dryer from '../assets/optimized/Air_dryer.webp';
+import Air_Compressor from '../assets/optimized/Air_Compressor.webp';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 

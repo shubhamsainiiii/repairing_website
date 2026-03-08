@@ -6,12 +6,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
-import slider1 from '../assets/slider1.jpg';
-import slider2 from '../assets/slider2.jpg';
-import slider3 from '../assets/slider3.jpg';
-import sliderMobile1 from '../assets/sliderMobile1.jpg';
-import sliderMobile2 from '../assets/sliderMobile2.jpg';
-import sliderMobile3 from '../assets/sliderMobile13.jpg';
+import slider1 from '../assets/optimized/slider1.webp';
+import slider2 from '../assets/optimized/slider2.webp';
+import slider3 from '../assets/optimized/slider3.webp';
+import sliderMobile1 from '../assets/optimized/sliderMobile1.webp';
+import sliderMobile2 from '../assets/optimized/sliderMobile2.webp';
+import sliderMobile3 from '../assets/optimized/sliderMobile13.webp';
 
 const Slider = ({ children, slides, slideRenderer, className, swiperClassName, ...swiperProps }) => {
     const defaultSlides = [

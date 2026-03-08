@@ -1,7 +1,7 @@
 // import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 // import { FaBars, FaPhone, FaTimes } from 'react-icons/fa';
-// import logo from '../assets/logo.png'
+// import logo from '../assets/optimized/logo.webp'
 
 // const Header = () => {
 //     const [menuOpen, setMenuOpen] = useState(false);
@@ -113,7 +113,7 @@ import { Link } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
 import { Twirl as Hamburger } from "hamburger-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/logo.png";
+import logo from "../assets/optimized/logo.webp";
 
 /* ================== ANIMATION VARIANTS ================== */
 

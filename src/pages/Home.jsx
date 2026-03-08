@@ -3,13 +3,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaBook, FaPhoneAlt, FaSearch, FaTools } from "react-icons/fa";
-import Ac from '../assets/Ac.jpeg'
-import Oven from '../assets/oven.jpeg'
-import rahul from '../assets/rahul.png'
-import priya from '../assets/priya.avif'
-import amit from '../assets/amit.png'
-import washing_machine from '../assets/washing_machine.jpeg';
-import refrigerator from '../assets/refrigerator.jpeg'
+import Ac from '../assets/optimized/Ac.webp'
+import Oven from '../assets/optimized/oven.webp'
+import rahul from '../assets/optimized/rahul.webp'
+import priya from '../assets/optimized/priya.webp'
+import amit from '../assets/optimized/amit.webp'
+import washing_machine from '../assets/optimized/washing_machine.webp';
+import refrigerator from '../assets/optimized/refrigerator.webp'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Slider from '../components/Slider';
@@ -156,7 +156,7 @@ const Home = () => {
 
       {/* Hero Section */}
       <div
-        className="bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-white text-center px-4"
+        className="bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-white text-center px-4 mt-15"
         style={{
           backgroundImage: `url(${Oven})`,
           backgroundBlendMode: "overlay",
@@ -222,7 +222,7 @@ const Home = () => {
 
 
       {/* Testimonials Slider */}
-      <div className="mt-30 text-center">
+      <div className="mt-30 mb-20 text-center">
         <h2 className="text-3xl font-bold mb-12 text-gray-800">What Our Customers Say</h2>
 
         <Slider
