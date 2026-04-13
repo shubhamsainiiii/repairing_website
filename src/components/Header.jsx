@@ -6,7 +6,6 @@ import { Twirl as Hamburger } from "hamburger-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/optimized/logo.webp";
 
-/* ================== ANIMATION VARIANTS ================== */
 
 const menuVariants = {
     hidden: {
